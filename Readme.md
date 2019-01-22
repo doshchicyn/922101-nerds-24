@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Максим Дощицын](https://up.htmlacademy.ru/htmlcss/24/user/922101).
-* Наставник: `Юрий Зайцев`.
+* Наставник: [Юрий Зайцев](https://htmlacademy.ru/profile/yuryzaytsev).
 
 ---
 
