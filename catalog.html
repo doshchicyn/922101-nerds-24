@@ -28,8 +28,12 @@
 			<div class="main-content">
 				<section class="filter-settings">
 					<h2 class="visually-hidden">Форма поиска</h2>
-					<form action="#" name="search">
+					<form action="https://echo.htmlacademy.ru" name="search">
 					<!-- Блок Стоимость -->
+						<!-- <fieldset>
+							<legend class="cost">Стоимость:</legend>
+							<input type="range" id="cost-range" name="range" step="100" min="0" max="20000">
+						</fieldset> -->
 						<fieldset>
 							<legend class="grid">Сетка:</legend>
 							<ul class="grid-types">
@@ -72,7 +76,7 @@
 								</li>
 							</ul>
 						</fieldset>
-						<button class="btn" type="submit">Показать</button>
+						<button class="btn view-btn" type="submit">Показать</button>
 					</form>
 				</section>
 				<div class="catalog">
@@ -147,6 +151,21 @@
 					</section>
 				</div>
 			</div>
+			<section class="contacts">
+				<h2 class="visually-hidden">Как нас найти</h2>
+				<img class="main-map" src="img/map.jpg" alt="Адрес офиса Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
+				<div class="wrap">
+					<address class="contact-container">
+						<b class="contact-name">Nёrds design studio</b>
+						<p class="contact-adress">
+							191186, Санкт-Петербург, <br>
+							ул. Б. Конюшенная, д. 19/8
+						</p>
+						<span class="contact-phone">тел. <a  href="tel:+7(812)275-75-75">+7 (812) 275-75-75</a></span>
+						<a class="btn red-btn" href="#">Напишите нам</a>
+					</address>
+				</div>
+			</section>
 		</main>
 		<footer class="main-footer">
 			<div class="footer-container">
@@ -162,6 +181,28 @@
 					<span class="promo-discount">Скидка 10% для друзей из социальных сетей.</span>
 				</p>
 			</div>
+			<section class="modal-write-us">
+				<h2 class="visually-hidden">Форма обратной связи</h2>
+				<b class="modal-title">Напишите нам</b>
+				<form action="https://echo.htmlacademy.ru" name="write-us">
+					<div class="wrap">
+						<p class="modal-item">
+							<label for="name"><b>Ваше имя:</b></label>
+							<input id="name" type="text" name="name" value="" placeholder="Имя Фамилия" maxlength="30" autofocus="" required="">
+						</p>
+						<p class="modal-item">
+							<label for="email"><b>Ваш e-mail:</b></label>
+							<input id="email" type="email" name="email" value="" placeholder="email@example.com" required="">
+						</p>
+					</div>
+					<p class="modal-item">
+						<label for="text-letter"><b>Текст письма:</b></label>
+						<textarea id="text-letter" name="text-letter" placeholder="В свободной форме" cols="70" rows="10" ></textarea>
+					</p>
+					<button class="btn submit-btn" type="submit">Отправить</button>
+				</form>
+				<a class="btn close-btn" href="#">Закрыть</a>
+			</section>
 		</footer>
 	</body>
 </html>
