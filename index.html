@@ -123,7 +123,9 @@
 							191186, Санкт-Петербург, <br>
 							ул. Б. Конюшенная, д. 19/8
 						</p>
-						<span class="contact-phone">тел. <a  href="tel:+7(812)275-75-75">+7 (812) 275-75-75</a></span>
+						<p class="contact-phone">
+							тел. <a  href="tel:+78122757575">+7 (812) 275-75-75</a>
+						</p>
 						<a class="btn red-btn" href="#">Напишите нам</a>
 					</address>
 				</div>
@@ -133,15 +135,27 @@
 			<div class="footer-container">
 				<div class="footer-socials">
 					<ul class="social-links">
-						<li><a class="link-vk" href="#">Вконтакте</a></li>
-						<li><a class="link-fb" href="#">Фейсбук</a></li>
-						<li><a class="link-insta" href="#">Инстаграм</a></li>
+						<li>
+							<a class="link-item link-vk" href="#">
+								<span class="visually-hidden">Вконтакте</span>
+							</a>
+						</li>
+						<li>
+							<a class="link-item link-fb" href="#">
+								<span class="visually-hidden">Фейсбук</span>
+							</a>
+						</li>
+						<li>
+							<a class="link-item link-insta" href="#">
+								<span class="visually-hidden">Инстаграм</span>
+							</a>
+						</li>
 					</ul>
 				</div>
-				<p class="footer-promo">
-					<b class="be-friends">Давайте дружить, это выгодно!</b>
-					<span class="promo-discount">Скидка 10% для друзей из социальных сетей.</span>
-				</p>
+				<div class="footer-promo">
+					<p class="be-friends">Давайте дружить, это выгодно!</p>
+					<p class="promo-discount">Скидка 10% для друзей из социальных сетей.</p>
+				</div>
 			</div>
 		</footer>
 		<section class="modal-write-us">
@@ -150,21 +164,21 @@
 			<form class="feedback" action="https://echo.htmlacademy.ru" method="post" name="write-us">
 				<div class="wrap">
 					<p class="modal-item">
-						<label for="name"><b>Ваше имя:</b></label>
-						<input id="name" type="text" name="name" value="" placeholder="Имя Фамилия" maxlength="30" autofocus="" required="">
+						<label for="name">Ваше имя:</label>
+						<input id="name" type="text" name="name" value="" placeholder="Имя Фамилия" maxlength="30" autofocus required>
 					</p>
 					<p class="modal-item">
-						<label for="email"><b>Ваш e-mail:</b></label>
-						<input id="email" type="email" name="email" value="" placeholder="email@example.com" required="">
+						<label for="email">Ваш e-mail:</label>
+						<input id="email" type="email" name="email" value="" placeholder="email@example.com" required>
 					</p>
 				</div>
 				<p class="modal-text">
-					<label for="text-letter"><b>Текст письма:</b></label>
+					<label for="text-letter">Текст письма:</label>
 					<textarea id="text-letter" name="text-letter" placeholder="В свободной форме" cols="70" rows="10" ></textarea>
 				</p>
 				<button class="btn submit-btn" type="submit">Отправить</button>
 			</form>
-			<button class="close-modal" type="button">Закрыть</button>
+			<button class="close-modal" type="button" aria-label="Закрыть"></button>
 		</section>
 	</body>
 </html>
