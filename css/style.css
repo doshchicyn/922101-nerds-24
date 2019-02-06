@@ -12,6 +12,15 @@ a {
 	text-decoration: none;
 }
 
+.visually-hidden {
+	display: none;
+}
+
+.header-logo img {
+	width: 160px;
+	height: 65px;
+}
+
 .header-navigation {
 	background-color: #EFEFEF;
 	line-height: 30px;
@@ -40,6 +49,83 @@ a {
 .header-basket a:focus {
 	color: rgba(0,0,0,0.3);
 }
+
+.main-features .features-list {
+	list-style: none;
+}
+
+.list-item .item-title {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 30px;
+	text-align: left;
+	color: #000000;
+}
+
+.list-item .item-text {
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+	color: #283136;
+}
+
+.list-item .btn {
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.list-item .order-btn {
+	width: 160px;
+	height: 50px;
+	padding: 18px 39px;
+	border-radius: 5px;
+}
+
+.list-item .red-btn {
+	background-color: #fb565a;
+}
+
+.list-item .red-btn:hover {
+	background-color: #e74246;
+}
+
+.list-item .red-btn:focus {
+	background-color: #d7373b;
+	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+
+.list-item .green-btn {
+	background-color: #00ca74;
+}
+
+.list-item .green-btn:hover {
+	background-color: #00bc6c;
+}
+
+.list-item .red-btn:focus {
+	background-color: #d7373b;
+	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.list-item .green-btn:hover {
+	background-color: #e74246;
+}
+
+.list-item btn:focus {
+	background-color: #d7373b;
+	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+
+.list-item .yellow-btn {
+	background-color: #efc84a;
+}
+
 
 
 
