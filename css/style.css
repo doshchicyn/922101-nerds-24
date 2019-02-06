@@ -1,3 +1,49 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	color: #000000;
+	background: #ffffff;
+	font-family: "Roboto", Arial, sans-serif;
+	width: 1440px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header-navigation {
+	background-color: #EFEFEF;
+	line-height: 30px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.header-menu,
+.header-basket {
+	list-style-type: none;
+	color: #ffffff;
+}
+
+.header-menu a,
+.header-basket a {
+	color: #000000;
+}
+
+.header-menu a:hover,
+.header-basket a:hover {
+	color: #fb565a;
+}
+
+.header-menu a:focus,
+.header-basket a:focus {
+	color: rgba(0,0,0,0.3);
+}
+
+
+
+/* модальное окно скрыто*/
 .modal-write-us {
 	display: none;
 }
