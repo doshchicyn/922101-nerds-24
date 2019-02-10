@@ -21,6 +21,10 @@ a {
 	height: 65px;
 }
 
+.inner-header-logo:active {
+	opacity: 0.3;
+}
+
 .header-navigation {
 	background-color: #EFEFEF;
 	line-height: 30px;
@@ -49,6 +53,8 @@ a {
 .header-basket a:focus {
 	color: rgba(0,0,0,0.3);
 }
+
+/* .menu-current */
 
 .main-features .features-list {
 	list-style: none;
@@ -93,7 +99,7 @@ a {
 	background-color: #e74246;
 }
 
-.red-btn:focus, {
+.red-btn:focus {
 	background-color: #d7373b;
 	box-shadow: inset 0px 3px 0 0 rgba(193, 49, 53, 0.6);
 	color: rgba(255, 255, 255, .3);
@@ -197,30 +203,21 @@ a.link-academy img:hover {
 	background-image: url(../img/logo-1-hover.png);
 }
 
-a.link-academy img:active{
-	opacity: 0.1;
-}
-
 a.link-barbershop img:hover {
 	background-image: url(../img/logo-2-hover.png);
-}
-
-a.link-barbershop img:active {
-	opacity: 0.1;
 }
 
 a.link-pink img:hover {
 	background-image: url(../img/logo-3-hover.png);
 }
 
-a.link-pink img:active {
-	opacity: 0.1;
-}
-
 a.link-mishka img:hover {
 	background-image: url(../img/logo-4-hover.png);
 }
 
+a.link-academy img:active,
+a.link-barbershop img:active,
+a.link-pink img:active,
 a.link-mishka img:active {
 	opacity: 0.1;
 }
@@ -258,22 +255,60 @@ a.link-mishka img:active {
 
 .social-links {
 	list-style: none;
+	/* background-color: #aaa; */
 }
 
 .link-item {
 	background-color: #e1e1e1;
+	width: 79px;
+	height: 79px;
+	border-radius: 50%;
 }
 
 .link-vk {
+	display: inline-block;
 	background-image: url(../img/vk-icon.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+	width: 79px;
+	height: 79px;
 }
 
 .link-fb {
+	display: inline-block;
 	background-image: url(../img/fb-icon.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+	width: 79px;
+	height: 79px;
 }
 
 .link-insta {
-	background-image: url(..img/img/insta-icon.svg);
+	display: inline-block;
+	background-image: url(../img/insta-icon.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+	width: 79px;
+	height: 79px;
+}
+
+.link-vk:hover,
+.link-fb:hover,
+.link-insta:hover {
+	background-color: #e74246;
+}
+
+.link-item:active {
+	background-color: #d7373b;
+}
+
+.link-vk:active,
+.link-fb:active,
+.link-insta:active {
+	opacity: 0.3;
 }
 
 .be-friends {
@@ -289,7 +324,143 @@ a.link-mishka img:active {
 	color: #444444;
 }
 
+.welcome-text h1 {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: bold;
+}
 
+fieldset.border {
+	border: none;
+}
+
+.grid, .features {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.grid-types,
+.features-types {
+	list-style-type: none;
+}
+
+.grid-option label,
+.feature-option label {
+	color: #283136;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.view-btn {
+	border: none;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: 600;
+	width: 260px;
+	height: 50px;
+	border-radius: 3px;
+	background-color: #eee;
+}
+
+.view-btn:hover {
+	background-color: #dfdfdf;
+}
+
+.view-btn:active {
+	background-color: #d5d5d5;
+	box-shadow: inset 0px 3px 0 0 rgba(192, 192, 192, 0.6);
+	color: rgba(167, 167, 167, .3);
+	outline: none;
+}
+
+.examples {
+	/* display: flex;
+	width: 760px; */
+	list-style: none;
+}
+
+.example-item {
+	position: relative;
+	width: 360px;
+	height: 576px;
+}
+
+.item-container {
+	display: none;
+}
+
+.example-item:hover {
+	box-shadow: 0 0 15px 2px #d3d3d3;
+}
+
+.example-item:hover .item-container {
+	display: block;
+	position: absolute;
+	width: 360px;
+	height: 231px;
+	background-color: #eeeeef;
+	bottom: 0;
+}
+
+.item-details {
+	width: 200px;
+	margin: 35px auto;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.item-link h3 {
+	display: inline;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 30px;
+	color: #000;
+}
+
+.item-text {
+	font-size: 16px;
+	line-height: 18px;
+	color: #666;
+	text-overflow: ellipsis;
+	max-height: 54px;
+}
+
+.price-btn {
+	width: 200px;
+	height: 50px;
+	background-color: #fb565a;
+	border: none;
+	border-radius: 3px;
+}
+
+.price-btn:hover {
+	background-color: #e74246;
+}
+
+.price-btn:focus {
+	background-color: #d7373b;
+	box-shadow: inset 0px 3px 0 0 rgba(193, 49, 53, 0.6);
+	outline: none;
+}
+
+.screen-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.panel {
+	opacity: 0.12;
+}
+
+.example-item:hover .panel {
+	opacity: 1;
+}
 
 /* модальное окно скрыто*/
 .modal-write-us {

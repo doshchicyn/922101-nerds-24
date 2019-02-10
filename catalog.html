@@ -37,49 +37,49 @@
 							<legend class="cost">Стоимость:</legend>
 							<input type="range" id="cost-range" name="range" step="100" min="0" max="20000">
 						</fieldset> -->
-						<fieldset>
+						<fieldset class="border">
 							<legend class="grid">Сетка:</legend>
 							<ul class="grid-types">
 								<li class="grid-option">
-									<input class="visually-hidden input-radio" id="adaptive" type="radio" name="grid" value="adaptive" checked>
+									<input class="input-radio" id="adaptive" type="radio" name="grid" value="adaptive" checked>
 									<label for="adaptive">Адаптивная</label>
 								</li>
 								<li class="grid-option">
-									<input class="visually-hidden input-radio" id="fix" type="radio" name="grid" value="fix">
+									<input class="input-radio" id="fix" type="radio" name="grid" value="fix">
 									<label for="fix">Фиксированная</label>
 								</li>
 								<li class="grid-option">
-									<input class="visually-hidden input-radio" id="flex" type="radio" name="grid" value="flex">
+									<input class="input-radio" id="flex" type="radio" name="grid" value="flex">
 									<label for="flex">Резиновая</label>
 								</li>
 							</ul>
 						</fieldset>
-						<fieldset>
+						<fieldset class="border">
 							<legend class="features">Особенности:</legend>	
 							<ul class="features-types">
 								<li class="feature-option">
-									<input class="visually-hidden input-checkbox" id="slider" type="checkbox" name="feature" value="slider" checked>
+									<input class="input-checkbox" id="slider" type="checkbox" name="feature" value="slider" checked>
 									<label for="slider">Слайдер</label>
 								</li>
 								<li>
-									<input class="visually-hidden input-checkbox" id="block" type="checkbox" name="feature" value="block">
+									<input class="input-checkbox" id="block" type="checkbox" name="feature" value="block">
 									<label for="block">Блок преимуществ</label>
 								</li>
 								<li>
-									<input class="visually-hidden input-checkbox" id="news" type="checkbox" name="feature" value="news" checked>
+									<input class="input-checkbox" id="news" type="checkbox" name="feature" value="news" checked>
 									<label for="news">Новости</label>
 								</li>
 								<li>
-									<input class="visually-hidden input-checkbox" id="gallery" type="checkbox" name="feature" value="gallery">
+									<input class="input-checkbox" id="gallery" type="checkbox" name="feature" value="gallery">
 									<label for="gallery">Галерея</label>
 								</li>
 								<li>
-									<input class="visually-hidden input-checkbox" id="basket" type="checkbox" name="feature" value="basket">
+									<input class="input-checkbox" id="basket" type="checkbox" name="feature" value="basket">
 									<label for="basket">Корзина</label>
 								</li>
 							</ul>
 						</fieldset>
-						<button class="btn view-btn" type="submit">Показать</button>
+						<button class="view-btn" type="submit">Показать</button>
 					</form>
 				</section>
 				<div class="catalog">
@@ -91,63 +91,88 @@
 						<h2 class="visually-hidden">Карточки готовых сайтов</h2>
 						<ul class="examples">
 							<li class="example-item">
-								<img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
-								<div class="item-details">
-									<a class="item-link" href="#">
-										<h3>Sedona</h3>
-									</a>
-									<p class="item-text">Информационный сайт для туристов.</p>
-									<button class="btn price-btn" type="button">9 900 РУБ.</button>
+								<div class="screen-container">
+									<img class="panel" src="img/browser.svg" alt="Панель" width="360" height="40" >
+									<img class="browser" src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
+								</div>
+								<div class="item-container">
+									<div class="item-details">
+										<a class="item-link" href="#">
+											<h3>Sedona</h3>
+										</a>
+										<p class="item-text">Информационный сайт для туристов.</p>
+										<button class="btn price-btn" type="button">9 900 РУБ.</button>
+									</div>
 								</div>
 							</li>
 							<li class="example-item">
-								<img src="img/img-pink.jpg" alt="Pink" width="360" height="576">
-								<div class="item-details">
-									<a class="item-link" href="#">
-										<h3>Pink app</h3>
-									</a>
-									<p class="item-text">Продуктовый лендинг приложения для iOS и Android.</p>
-									<button class="btn price-btn" type="button">9 900 РУБ.</button>
+								<div class="screen-container">
+									<img class="panel" src="img/browser.svg" alt="Панель" width="360" height="40" >
+									<img class="browser" src="img/img-pink.jpg" alt="Pink" width="360" height="576">
+								<div class="item-container">
+									<div class="item-details">
+										<a class="item-link" href="#">
+											<h3>Pink app</h3>
+										</a>
+										<p class="item-text">Продуктовый лендинг приложения для iOS и Android.</p>
+										<button class="btn price-btn" type="button">9 900 РУБ.</button>
+									</div>
 								</div>
 							</li>
 							<li class="example-item">
-								<img src="img/img-barbershop.jpg" alt="Барбершоп Бородинский" width="360" height="576">
-								<div class="item-details">
-									<a class="item-link" href="#">
-										<h3>Barbershop</h3>
-									</a>
-									<p class="item-text">Сайт салона красоты. Для мужчин, да.</p>
-									<button class="btn price-btn" type="button">9 900 РУБ.</button>
+								<div class="screen-container">
+									<img class="panel" src="img/browser.svg" alt="Панель" width="360" height="40" >
+									<img class="browser" src="img/img-barbershop.jpg" alt="Барбершоп Бородинский" width="360" height="576">
+								<div class="item-container">
+									<div class="item-details">
+										<a class="item-link" href="#">
+											<h3>Barbershop</h3>
+										</a>
+										<p class="item-text">Сайт салона красоты. Для мужчин, да.</p>
+										<button class="btn price-btn" type="button">9 900 РУБ.</button>
+									</div>
 								</div>
 							</li>
 							<li class="example-item">
-								<img src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
-								<div class="item-details">
-									<a class="item-link" href="#">
-										<h3>Mishka</h3>
-									</a>
-									<p class="item-text">Интернет-магазин вязаных игрушек.</p>
-									<button class="btn price-btn" type="button">9 900 РУБ.</button>
+								<div class="screen-container">
+									<img class="panel" src="img/browser.svg" alt="Панель" width="360" height="40" >
+									<img class="browser" src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
+								<div class="item-container">
+									<div class="item-details">
+										<a class="item-link" href="#">
+											<h3>Mishka</h3>
+										</a>
+										<p class="item-text">Интернет-магазин вязаных игрушек.</p>
+										<button class="btn price-btn" type="button">9 900 РУБ.</button>
+									</div>
 								</div>
 							</li>
 							<li class="example-item">
-								<img src="img/img-aplus.jpg" alt="A+" width="360" height="576">
-								<div class="item-details">
-									<a class="item-link" href="#">
-										<h3>A plus</h3>
-									</a>
-									<p class="item-text">Лендинг курсов повышения квалификации.</p>
-									<button class="btn price-btn" type="button">9 900 РУБ.</button>
+								<div class="screen-container">
+									<img class="panel" src="img/browser.svg" alt="Панель" width="360" height="40" >
+									<img class="browser" src="img/img-aplus.jpg" alt="A+" width="360" height="576">
+								<div class="item-container">
+									<div class="item-details">
+										<a class="item-link" href="#">
+											<h3>A plus</h3>
+										</a>
+										<p class="item-text">Лендинг курсов повышения квалификации.</p>
+										<button class="btn price-btn" type="button">9 900 РУБ.</button>
+									</div>
 								</div>
 							</li>
 							<li class="example-item">
-								<img src="img/img-kvast.jpg" alt="Кваст" width="360" height="576">
-								<div class="item-details">
-									<a class="item-link" href="#">
-										<h3>Кваст</h3>
-									</a>
-									<p class="item-text">Промо-сайт производителя крафтового кваса.</p>
-									<button class="btn price-btn" type="button">9 900 РУБ.</button>
+								<div class="screen-container">
+									<img class="panel" src="img/browser.svg" alt="Панель" width="360" height="40" >
+									<img class="browser" src="img/img-kvast.jpg" alt="Кваст" width="360" height="576">
+								<div class="item-container">
+									<div class="item-details">
+										<a class="item-link" href="#">
+											<h3>Кваст</h3>
+										</a>
+										<p class="item-text">Промо-сайт производителя крафтового кваса.</p>
+										<button class="btn price-btn" type="button">9 900 РУБ.</button>
+									</div>
 								</div>
 							</li>
 						</ul>
@@ -162,12 +187,12 @@
 						<b class="contact-name">Nёrds design studio</b>
 						<p class="contact-adress">
 							191186, Санкт-Петербург, <br>
-							ул. Б. Конюшенная, д. 19/8
+							ул. Б. Конюшенная, д. 19/8 
 						</p>
 						<p class="contact-phone">
-							тел. <a  href="tel:+78122757575">+7 (812) 275-75-75</a>
+							тел. <a class="phone-number"  href="tel:+78122757575">+7 (812) 275-75-75</a>
 						</p>
-						<a class="btn red-btn" href="#">Напишите нам</a>
+						<a class="btn send-us-btn red-btn" href="#">Напишите нам</a>
 					</address>
 				</div>
 			</section>
@@ -176,18 +201,18 @@
 			<div class="footer-container">
 				<div class="footer-socials">
 					<ul class="social-links">
-						<li>
-							<a class="link-item link-vk" href="#">
+						<li class="link-item">
+							<a class="link-vk" href="#">
 								<span class="visually-hidden">Вконтакте</span>
 							</a>
 						</li>
-						<li>
-							<a class="link-item link-fb" href="#">
+						<li class="link-item">
+							<a class="link-fb" href="#">
 								<span class="visually-hidden">Фейсбук</span>
 							</a>
 						</li>
-						<li>
-							<a class="link-item link-insta" href="#">
+						<li class="link-item">
+							<a class="link-insta" href="#">
 								<span class="visually-hidden">Инстаграм</span>
 							</a>
 						</li>
@@ -206,7 +231,7 @@
 				<div class="wrap">
 					<p class="modal-item">
 						<label class="field-name" for="name">Ваше имя:</label>
-						<input id="name" type="text" name="name" value="" placeholder="Имя Фамилия" maxlength="30" autofocus required>
+						<input id="name" type="text" name="name" value="" placeholder="Имя Фамилия" maxlength="30" required>
 					</p>
 					<p class="modal-item">
 						<label class="field-name" for="email">Ваш e-mail:</label>
@@ -217,7 +242,7 @@
 					<label class="field-name" for="text-letter">Текст письма:</label>
 					<textarea id="text-letter" name="text-letter" placeholder="В свободной форме" cols="70" rows="10" ></textarea>
 				</p>
-				<button class="btn submit-btn" type="submit">Отправить</button>
+				<button class="btn submit-btn red-btn" type="submit">Отправить</button>
 			</form>
 			<button class="close-modal" type="button" aria-label="Закрыть"></button>
 		</section>
