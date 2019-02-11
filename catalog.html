@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Каталог Нёрдс</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -16,7 +16,7 @@
 				<ul class="header-menu">
 					<li><a href="#">Студия</a></li>
 					<li><a href="#">Клиенты</a></li>
-					<li><a class="menu-current" href="catalog.html">Магазин</a></li>
+					<li><a class="menu-current">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 				<ul class="header-basket">
@@ -79,7 +79,7 @@
 								</li>
 							</ul>
 						</fieldset>
-						<button class="view-btn" type="submit">Показать</button>
+						<button class="btn view-btn" type="submit">Показать</button>
 					</form>
 				</section>
 				<div class="catalog">
@@ -100,7 +100,7 @@
 										<a class="item-link" href="#">
 											<h3>Sedona</h3>
 										</a>
-										<p class="item-text">Информационный сайт для туристов.</p>
+										<p class="item-desc">Информационный сайт<br> для туристов.</p>
 										<button class="btn price-btn" type="button">9 900 РУБ.</button>
 									</div>
 								</div>
@@ -114,7 +114,7 @@
 										<a class="item-link" href="#">
 											<h3>Pink app</h3>
 										</a>
-										<p class="item-text">Продуктовый лендинг приложения для iOS и Android.</p>
+										<p class="item-desc">Продуктовый лендинг приложения для iOS и Android.</p>
 										<button class="btn price-btn" type="button">9 900 РУБ.</button>
 									</div>
 								</div>
@@ -128,7 +128,7 @@
 										<a class="item-link" href="#">
 											<h3>Barbershop</h3>
 										</a>
-										<p class="item-text">Сайт салона красоты. Для мужчин, да.</p>
+										<p class="item-desc">Сайт салона красоты. Для мужчин, да.</p>
 										<button class="btn price-btn" type="button">9 900 РУБ.</button>
 									</div>
 								</div>
@@ -142,7 +142,7 @@
 										<a class="item-link" href="#">
 											<h3>Mishka</h3>
 										</a>
-										<p class="item-text">Интернет-магазин вязаных игрушек.</p>
+										<p class="item-desc">Интернет-магазин вязаных игрушек.</p>
 										<button class="btn price-btn" type="button">9 900 РУБ.</button>
 									</div>
 								</div>
@@ -156,7 +156,7 @@
 										<a class="item-link" href="#">
 											<h3>A plus</h3>
 										</a>
-										<p class="item-text">Лендинг курсов повышения квалификации.</p>
+										<p class="item-desc">Лендинг курсов повышения квалификации.</p>
 										<button class="btn price-btn" type="button">9 900 РУБ.</button>
 									</div>
 								</div>
@@ -170,7 +170,7 @@
 										<a class="item-link" href="#">
 											<h3>Кваст</h3>
 										</a>
-										<p class="item-text">Промо-сайт производителя крафтового кваса.</p>
+										<p class="item-desc">Промо-сайт производителя крафтового кваса.</p>
 										<button class="btn price-btn" type="button">9 900 РУБ.</button>
 									</div>
 								</div>
@@ -225,26 +225,28 @@
 			</div>
 		</footer>
 		<section class="modal-write-us">
-			<h2 class="visually-hidden">Форма обратной связи</h2>
-			<b class="modal-title">Напишите нам</b>
-			<form class="feedback" action="https://echo.htmlacademy.ru" method="post" name="write-us">
-				<div class="wrap">
-					<p class="modal-item">
-						<label class="field-name" for="name">Ваше имя:</label>
-						<input id="name" type="text" name="name" value="" placeholder="Имя Фамилия" maxlength="30" required>
-					</p>
-					<p class="modal-item">
-						<label class="field-name" for="email">Ваш e-mail:</label>
-						<input id="email" type="email" name="email" value="" placeholder="email@example.com" required>
-					</p>
-				</div>
-				<p class="modal-text">
-					<label class="field-name" for="text-letter">Текст письма:</label>
-					<textarea id="text-letter" name="text-letter" placeholder="В свободной форме" cols="70" rows="10" ></textarea>
-				</p>
-				<button class="btn submit-btn red-btn" type="submit">Отправить</button>
-			</form>
-			<button class="close-modal" type="button" aria-label="Закрыть"></button>
+			<div class="modal-container">
+				<h2 class="visually-hidden">Форма обратной связи</h2>
+				<b class="modal-title">Напишите нам</b>
+				<form class="feedback" action="https://echo.htmlacademy.ru" method="post" name="write-us">
+					<div class="wrap">
+						<p class="modal-item">
+							<label class="field-name" for="name">Ваше имя:</label>
+							<input id="name" type="text" name="name" value="" placeholder="Имя Фамилия" maxlength="30" required>
+						</p>
+						<p class="modal-item">
+							<label class="field-name" for="email">Ваш e-mail:</label>
+							<input id="email" type="email" name="email" value="" placeholder="email@example.com" required>
+						</p>
+						<p class="modal-item">
+							<label class="field-name" for="text-letter">Текст письма:</label>
+							<textarea id="text-letter" name="text-letter" placeholder="В свободной форме" cols="70" rows="10" ></textarea>
+						</p>
+					</div>
+					<button class="btn submit-btn red-btn" type="submit">Отправить</button>
+				</form>
+				<button class="close-modal" type="button" aria-label="Закрыть"></button>
+			</div>
 		</section>
 	</body>
 </html>

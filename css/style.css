@@ -5,11 +5,16 @@ body {
 	color: #000000;
 	background: #ffffff;
 	font-family: "Roboto", Arial, sans-serif;
-	width: 1440px;
+	min-width: 1440px;
 }
 
 a {
 	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 .visually-hidden {
@@ -42,11 +47,13 @@ a {
 .header-menu a,
 .header-basket a {
 	color: #000000;
+	font-weight: 500;
 }
 
-.header-menu a:hover,
-.header-basket a:hover {
+.header-menu a[href]:hover,
+.header-basket a[href]:hover {
 	color: #fb565a;
+	transition: 0.1s;
 }
 
 .header-menu a:focus,
@@ -69,9 +76,15 @@ a {
 	color: #000000;
 }
 
+.item-image {
+	width: 300px;
+	height: 146px;
+}
+
 .list-item .item-text {
 	font-size: 16px;
 	line-height: 24px;
+	font-weight: normal;
 	text-align: left;
 	color: #283136;
 }
@@ -79,16 +92,16 @@ a {
 .btn {
 	font-size: 16px;
 	line-height: 18px;
+	font-weight: 500;
 	text-align: center;
 	text-transform: uppercase;
 	color: #ffffff;
+	transition: 0.1s;
 }
 
 .list-item .order-btn {
-	width: 160px;
-	height: 50px;
-	padding: 18px 39px;
-	border-radius: 5px;
+	padding: 16px 39px;
+	border-radius: 3px;
 }
 
 .red-btn {
@@ -136,12 +149,14 @@ background-color: #efc84a;
 .column-our-work .work-title {
 	font-size: 45px;
 	line-height: 45px;
+	font-weight: 500;
 	color: #000000;
 }
 
 .column-our-work .work-desc {
 	font-size: 16px;
 	line-height: 24px;
+	font-weight: normal;
 	color: #283136;
 }
 
@@ -161,6 +176,7 @@ background-color: #efc84a;
 	color: #283136;
 	font-size: 16px;
 	line-height: 24px;
+	font-weight: normal;
 }
 
 .column-our-results .logo {
@@ -187,11 +203,13 @@ background-color: #efc84a;
 
 .percent sup {
 	font-size: 26px;
+	font-weight: bold;
 }
 
 .statistics .notes {
 	font-size: 16px;
 	line-height: 18px;
+	font-weight: normal;
 	color: #283136;
 }
 
@@ -199,26 +217,18 @@ background-color: #efc84a;
 	list-style: none;
 }
 
-a.link-academy img:hover {
-	background-image: url(../img/logo-1-hover.png);
+a.link-academy:not(:hover),
+a.link-barbershop:not(:hover),
+a.link-pink:not(:hover),
+a.link-mishka:not(:hover) {
+	opacity: 0.2;
+	transition: 0.2s;
 }
 
-a.link-barbershop img:hover {
-	background-image: url(../img/logo-2-hover.png);
-}
-
-a.link-pink img:hover {
-	background-image: url(../img/logo-3-hover.png);
-}
-
-a.link-mishka img:hover {
-	background-image: url(../img/logo-4-hover.png);
-}
-
-a.link-academy img:active,
-a.link-barbershop img:active,
-a.link-pink img:active,
-a.link-mishka img:active {
+a.link-academy:active,
+a.link-barbershop:active,
+a.link-pink:active,
+a.link-mishka:active {
 	opacity: 0.1;
 }
 
@@ -243,30 +253,45 @@ a.link-mishka img:active {
 .phone-number {
 	font-size: 16px;
 	line-height: 18px;
+	font-weight: normal;
 	color: #666666;
 }
 
 .send-us-btn {
-	width: 219px;
-	height: 50px;
-	padding: 18px 39px;
-	border-radius: 5px;	
+	padding: 16px 45px;
+	border-radius: 3px;	
+}
+
+.footer-socials {
+	width: 261px;
+	text-align: center;
 }
 
 .social-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0;
 	list-style: none;
 	/* background-color: #aaa; */
 }
 
 .link-item {
-	background-color: #e1e1e1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 79px;
 	height: 79px;
 	border-radius: 50%;
+	background-color: #e1e1e1;
+}
+
+.link-item a {
+	transition: 0.1s;
 }
 
 .link-vk {
-	display: inline-block;
 	background-image: url(../img/vk-icon.svg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -276,7 +301,6 @@ a.link-mishka img:active {
 }
 
 .link-fb {
-	display: inline-block;
 	background-image: url(../img/fb-icon.svg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -286,7 +310,6 @@ a.link-mishka img:active {
 }
 
 .link-insta {
-	display: inline-block;
 	background-image: url(../img/insta-icon.svg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -303,6 +326,7 @@ a.link-mishka img:active {
 
 .link-item:active {
 	background-color: #d7373b;
+	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .link-vk:active,
@@ -321,13 +345,14 @@ a.link-mishka img:active {
 .promo-discount {
 	font-size: 16px;
 	line-height: 22px;
+	font-weight: normal;
 	color: #444444;
 }
 
 .welcome-text h1 {
 	font-size: 55px;
 	line-height: 55px;
-	font-weight: bold;
+	font-weight: 500;
 }
 
 fieldset.border {
@@ -352,18 +377,14 @@ fieldset.border {
 	color: #283136;
 	font-size: 16px;
 	line-height: 20px;
+	font-weight: 500;
 }
 
 .view-btn {
 	border: none;
-	font-size: 16px;
-	line-height: 18px;
-	text-align: center;
-	text-transform: uppercase;
+	min-width: 260px;
+	padding: 16px;
 	color: #000000;
-	font-weight: 600;
-	width: 260px;
-	height: 50px;
 	border-radius: 3px;
 	background-color: #eee;
 }
@@ -375,7 +396,7 @@ fieldset.border {
 .view-btn:active {
 	background-color: #d5d5d5;
 	box-shadow: inset 0px 3px 0 0 rgba(192, 192, 192, 0.6);
-	color: rgba(167, 167, 167, .3);
+	color: rgba(0, 0, 0, 0.3);
 	outline: none;
 }
 
@@ -409,7 +430,7 @@ fieldset.border {
 }
 
 .item-details {
-	width: 200px;
+	width: 360px;
 	margin: 35px auto;
 	text-align: center;
 	word-wrap: break-word;
@@ -420,23 +441,23 @@ fieldset.border {
 	text-transform: uppercase;
 	font-size: 18px;
 	line-height: 30px;
+	font-weight: bold;
 	color: #000;
 }
 
-.item-text {
+.item-desc {
 	font-size: 16px;
 	line-height: 18px;
 	color: #666;
 	text-overflow: ellipsis;
-	max-height: 54px;
 }
 
 .price-btn {
-	width: 200px;
-	height: 50px;
+	padding: 16px 60px;
 	background-color: #fb565a;
 	border: none;
 	border-radius: 3px;
+	text-align: center;
 }
 
 .price-btn:hover {
@@ -462,7 +483,75 @@ fieldset.border {
 	opacity: 1;
 }
 
-/* модальное окно скрыто*/
+/* модальное окно */
 .modal-write-us {
-	display: none;
+	/* display: none; */
+	/* position: absolute; */
+	/* bottom: 180px; */
+	/* left: auto; */
+	/* width: 960px;
+	/* height: 590px; */
+	/* box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75); */
+	/* z-index: 1000; */
+}
+
+.modal-container {
+	width: 760px;
+	height: 435px;
+	padding-top: 75px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 85px;
+
+}
+
+.modal-title {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.modal-item input,
+.modal-item textarea {
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.modal-item input[placeholder="Имя Фамилия"],
+.modal-item input[placeholder="email@example.com"],
+.modal-item textarea[placeholder="В свободной форме"] {
+
+}
+
+.modal-item label {
+	display: block;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #000000;
+}
+
+form .submit-btn {
+	border: none;
+	min-width: 260px;
+	padding: 16px;
+	color: #ffffff;
+	border-radius: 3px;
+	background-color: #fb565a;
+}
+
+form .submit-btn:hover {
+	background-color: #e74246;
+}
+
+form .submit-btn:active {
+	background-color: #d7373b;
+	box-shadow: inset 0px 3px 0 0 rgba(193, 49, 53, 0.6);
+	color: rgba(255, 255, 255, .3);
+	outline: none;
 }
