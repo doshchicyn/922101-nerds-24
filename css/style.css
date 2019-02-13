@@ -217,18 +217,16 @@ background-color: #efc84a;
 	list-style: none;
 }
 
-a.link-academy:not(:hover),
-a.link-barbershop:not(:hover),
-a.link-pink:not(:hover),
-a.link-mishka:not(:hover) {
+.link-partner a {
 	opacity: 0.2;
 	transition: 0.2s;
 }
 
-a.link-academy:active,
-a.link-barbershop:active,
-a.link-pink:active,
-a.link-mishka:active {
+.link-partner a:hover {
+	opacity: 1;
+}
+
+.link-partner a:active {
 	opacity: 0.1;
 }
 
@@ -288,45 +286,35 @@ a.link-mishka:active {
 }
 
 .link-item a {
+	width: 79px;
+	height: 79px;
+	border-radius: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
 	transition: 0.1s;
+}
+
+.link-item:active {
+	background-color: #d7373b;
+	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .link-vk {
 	background-image: url(../img/vk-icon.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-	border-radius: 50%;
-	width: 79px;
-	height: 79px;
 }
 
 .link-fb {
 	background-image: url(../img/fb-icon.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-	border-radius: 50%;
-	width: 79px;
-	height: 79px;
 }
 
 .link-insta {
 	background-image: url(../img/insta-icon.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-	border-radius: 50%;
-	width: 79px;
-	height: 79px;
 }
 
 .link-vk:hover,
 .link-fb:hover,
 .link-insta:hover {
 	background-color: #e74246;
-}
-
-.link-item:active {
-	background-color: #d7373b;
-	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .link-vk:active,
@@ -522,12 +510,6 @@ fieldset.border {
 	color: #000000;
 }
 
-.modal-item input[placeholder="Имя Фамилия"],
-.modal-item input[placeholder="email@example.com"],
-.modal-item textarea[placeholder="В свободной форме"] {
-
-}
-
 .modal-item label {
 	display: block;
 	font-size: 16px;
@@ -536,7 +518,7 @@ fieldset.border {
 	color: #000000;
 }
 
-form .submit-btn {
+.submit-btn {
 	border: none;
 	min-width: 260px;
 	padding: 16px;
@@ -545,11 +527,11 @@ form .submit-btn {
 	background-color: #fb565a;
 }
 
-form .submit-btn:hover {
+.submit-btn:hover {
 	background-color: #e74246;
 }
 
-form .submit-btn:active {
+.submit-btn:active {
 	background-color: #d7373b;
 	box-shadow: inset 0px 3px 0 0 rgba(193, 49, 53, 0.6);
 	color: rgba(255, 255, 255, .3);
