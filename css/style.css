@@ -8,6 +8,38 @@ body {
 	min-width: 1440px;
 }
 
+/* временные стили */
+
+ /* body > * {
+	background-color: rgb(255, 0, 0);
+}
+
+body > * > * {
+	background-color: rgb(255, 94, 0);
+}
+
+body > * > * > * {
+	background-color: rgb(255, 226, 64);
+} */
+/*
+body > * > * > * > * {
+	background-color: rgb(94, 255, 0);
+}
+
+body > * > * > * > * > * {
+	background-color: rgb(0, 255, 234);
+}
+
+body > * > * > * > * > * > * {
+	background-color: rgb(0, 89, 255);
+}
+
+body > * > * > * > * > * > * > * {
+	background-color: rgb(32, 0, 211);
+} */
+
+/* основные стили */
+
 a {
 	text-decoration: none;
 }
@@ -21,9 +53,15 @@ img {
 	display: none;
 }
 
-.header-logo img {
-	width: 160px;
-	height: 65px;
+.main-header {
+	background-color: #eeeeee;
+	padding-top: 50px; 
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 20px;
+	width: 1160px;
 }
 
 .inner-header-logo:active {
@@ -31,17 +69,49 @@ img {
 }
 
 .header-navigation {
-	background-color: #EFEFEF;
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
 	line-height: 30px;
 	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 700;
+	padding-bottom: 18px;
+}
+
+.navigation-wrapper {
+	width: 800px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-logo img {
+	width: 160px;
+	height: 65px;
+}
+
+.header-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	width: 440px;
+}
+
+.header-basket {
+	display: flex;
+	justify-content: flex-end;
+	width: 160px;
 }
 
 .header-menu,
 .header-basket {
 	list-style-type: none;
-	color: #ffffff;
+	color: #000000;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
 }
 
 .header-menu a,
@@ -61,13 +131,48 @@ img {
 	color: rgba(0,0,0,0.3);
 }
 
-/* .menu-current */
+.main-features,
+.main-desc {
+	padding: 0;
+	margin: 0;
+	border-bottom: 2px solid #eeeeee;
+}
 
 .main-features .features-list {
+	margin: 0;
+	padding: 0;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
 	list-style: none;
 }
 
+.features-list .list-item {
+	margin: 0;
+	padding: 0;
+	width: 300px;
+	padding-right: 100px;
+}
+
+.features-list .list-item:nth-child(3) {
+	padding-right: 0;
+}
+
+.list-item .item-image {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 28px;
+	width: 300px;
+	height: 146px;
+}
+
 .list-item .item-title {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 21px;
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: bold;
@@ -76,12 +181,10 @@ img {
 	color: #000000;
 }
 
-.item-image {
-	width: 300px;
-	height: 146px;
-}
-
 .list-item .item-text {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 35px;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: normal;
@@ -146,7 +249,34 @@ background-color: #efc84a;
 	color: rgba(255, 255, 255, .3);
 }
 
+.desc-container {
+	margin: 0;
+	padding: 0;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.column-our-work {
+	margin: 0;
+	padding: 0;
+	width: 660px;
+}
+
+.column-our-results {
+	margin: 0;
+	padding: 0;
+	width: 360px;
+}
+
 .column-our-work .work-title {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 29px;
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
@@ -154,6 +284,9 @@ background-color: #efc84a;
 }
 
 .column-our-work .work-desc {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 42px;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: normal;
@@ -161,6 +294,9 @@ background-color: #efc84a;
 }
 
 .order-list-header {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 28px;
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
@@ -173,6 +309,9 @@ background-color: #efc84a;
 }
 
 .order-listing .list-item {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 27px;
 	color: #283136;
 	font-size: 16px;
 	line-height: 24px;
@@ -272,7 +411,6 @@ background-color: #efc84a;
 	margin: 0 auto;
 	padding: 0;
 	list-style: none;
-	/* background-color: #aaa; */
 }
 
 .link-item {
@@ -389,8 +527,6 @@ fieldset.border {
 }
 
 .examples {
-	/* display: flex;
-	width: 760px; */
 	list-style: none;
 }
 
@@ -472,7 +608,7 @@ fieldset.border {
 }
 
 /* модальное окно */
-.modal-write-us {
+/* .modal-write-us { */
 	/* display: none; */
 	/* position: absolute; */
 	/* bottom: 180px; */
@@ -481,7 +617,7 @@ fieldset.border {
 	/* height: 590px; */
 	/* box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75); */
 	/* z-index: 1000; */
-}
+
 
 .modal-container {
 	width: 760px;
