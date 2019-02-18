@@ -58,7 +58,9 @@ img {
 	padding-top: 50px; 
 }
 
-.container {
+.header-container,
+.main-container,
+.footer-container {
 	margin: 0 auto;
 	padding: 0 20px;
 	width: 1160px;
@@ -164,7 +166,7 @@ img {
 .list-item .item-image {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 28px;
+	margin-bottom: 23px;
 	width: 300px;
 	height: 146px;
 }
@@ -172,7 +174,7 @@ img {
 .list-item .item-title {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 21px;
+	margin-bottom: 15px;
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: bold;
@@ -184,7 +186,7 @@ img {
 .list-item .item-text {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 35px;
+	margin-bottom: 45px;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: normal;
@@ -203,7 +205,7 @@ img {
 }
 
 .list-item .order-btn {
-	padding: 16px 39px;
+	padding: 17px 40px;
 	border-radius: 3px;
 }
 
@@ -252,17 +254,17 @@ background-color: #efc84a;
 .desc-container {
 	margin: 0;
 	padding: 0;
-	padding-top: 80px;
+	padding-top: 40px;
 	padding-bottom: 80px;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	flex-wrap: wrap;
 }
 
 .column-our-work {
 	margin: 0;
 	padding: 0;
+	padding-top: 35px;
 	width: 660px;
 }
 
@@ -305,10 +307,15 @@ background-color: #efc84a;
 }
 
 .column-our-work .order-listing {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
 	list-style: none;
 }
 
 .order-listing .list-item {
+	position: relative;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 27px;
@@ -318,18 +325,39 @@ background-color: #efc84a;
 	font-weight: normal;
 }
 
+.order-listing .list-item::before {
+	content: "";
+	position: absolute;
+	left: -38px;
+	top: 11px;
+	border: 2px solid #fb565a;
+	width: 25px;
+
+}
+
 .column-our-results .logo {
 	width: 360px;
 	height: 208px;
 	background-color: #ffffff;
 }
 
+/* не доделал */
+.statistics {
+	display: table;
+}
+
 .statistics .theme {
+	margin: 0;
+	padding: 0;
+	margin-top: 35px;
+	margin-bottom: 50px;
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
 	text-transform: uppercase;
+	text-align: center;
 	font-weight: bold;
+	caption-side: top;
 }
 
 .statistics .percent {
@@ -352,8 +380,46 @@ background-color: #efc84a;
 	color: #283136;
 }
 
+.main-partners {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 80px;
+	border-bottom: 2px solid #eeeeee;
+}
+
 .partners-links {
+	padding: 0;
+	margin: 0;
+	padding-top: 45px;
+	padding-bottom: 47px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: auto;
+	flex-wrap: wrap;
 	list-style: none;
+}
+
+.link-partner {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 260px;
+}
+
+.link-partner::after {
+	content: "";
+	position: absolute;
+	right: -18px;
+	height: 52px;
+	width: 2px;
+	background-color: #eeeeee;
+}
+
+.link-partner:nth-child(4n)::after,
+.link-partner:last-child::after {
+	display: none;
 }
 
 .link-partner a {
@@ -369,10 +435,9 @@ background-color: #efc84a;
 	opacity: 0.1;
 }
 
-.main-map {
-	width: 1440px;
-	height: 416px;
-}
+.contacts {
+	background-image: url("/img/map.jpg");
+}	
 
 .contact-container {
 	font-style: normal;
@@ -399,9 +464,24 @@ background-color: #efc84a;
 	border-radius: 3px;	
 }
 
+.main-footer {
+	padding-top: 69px;
+	padding-bottom: 69px;
+}
+
+.footer-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .footer-socials {
-	width: 261px;
-	text-align: center;
+	width: 260px;
+}
+
+.footer-promo {
+	padding: 0;
+	margin: 0;
+	margin-left: 140px;
 }
 
 .social-links {
@@ -462,6 +542,8 @@ background-color: #efc84a;
 }
 
 .be-friends {
+	padding: 0;
+	margin: 0;
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: bold;
@@ -469,6 +551,9 @@ background-color: #efc84a;
 }
 
 .promo-discount {
+	padding: 0;
+	margin: 0;
+	margin-top: 11px;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: normal;
@@ -608,8 +693,8 @@ fieldset.border {
 }
 
 /* модальное окно */
-/* .modal-write-us { */
-	/* display: none; */
+.modal-write-us {
+	display: none;
 	/* position: absolute; */
 	/* bottom: 180px; */
 	/* left: auto; */
@@ -626,7 +711,6 @@ fieldset.border {
 	padding-left: 100px;
 	padding-right: 100px;
 	padding-bottom: 85px;
-
 }
 
 .modal-title {
