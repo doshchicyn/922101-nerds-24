@@ -101,6 +101,11 @@ img {
 	width: 440px;
 }
 
+.menu-current {
+	padding-bottom: 8px;
+	border-bottom: 2px solid #fb565a;
+}
+
 .header-basket {
 	display: flex;
 	justify-content: flex-end;
@@ -192,6 +197,7 @@ img {
 	font-weight: normal;
 	text-align: left;
 	color: #283136;
+	letter-spacing: 0;
 }
 
 .btn {
@@ -255,7 +261,7 @@ background-color: #efc84a;
 	margin: 0;
 	padding: 0;
 	padding-top: 40px;
-	padding-bottom: 80px;
+	padding-bottom: 40px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -288,7 +294,8 @@ background-color: #efc84a;
 .column-our-work .work-desc {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 42px;
+	margin-top: 3spx;
+	margin-bottom: 41px;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: normal;
@@ -318,7 +325,7 @@ background-color: #efc84a;
 	position: relative;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 27px;
+	margin-bottom: 22px;
 	color: #283136;
 	font-size: 16px;
 	line-height: 24px;
@@ -344,13 +351,31 @@ background-color: #efc84a;
 /* не доделал */
 .statistics {
 	display: table;
+	width: 360px;
 }
+
+.statistics tr {
+	padding: 0;
+	margin: 0;
+	width: 360px;
+	text-align: left;
+}
+
+.statistics th {
+	margin: 0;
+	padding: 20px;
+	padding-left: 0;
+	padding-bottom: 32px;
+	width: 95px;
+}
+
+
 
 .statistics .theme {
 	margin: 0;
 	padding: 0;
 	margin-top: 35px;
-	margin-bottom: 50px;
+	margin-bottom: 39px;
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
@@ -365,7 +390,6 @@ background-color: #efc84a;
 	font-size: 45px;
 	line-height: 10px;
 	font-weight: bold;
-
 }
 
 .percent sup {
@@ -385,42 +409,49 @@ background-color: #efc84a;
 	margin: 0;
 	margin-bottom: 80px;
 	border-bottom: 2px solid #eeeeee;
+	padding-top: 45px;
+	padding-bottom: 45px;
 }
 
 .partners-links {
 	padding: 0;
 	margin: 0;
-	padding-top: 45px;
-	padding-bottom: 47px;
+	
+	list-style: none;
+	width: 1200px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: auto;
+	align-content: center;
 	flex-wrap: wrap;
-	list-style: none;
 }
 
 .link-partner {
-	position: relative;
 	display: flex;
+	width: 300px;
 	justify-content: center;
-	align-items: center;
-	width: 260px;
+	position: relative;
+
+}
+
+.link-partner:nth-child(4) {
+	padding-right: 0;
 }
 
 .link-partner::after {
 	content: "";
 	position: absolute;
+	top: 0;
 	right: -18px;
 	height: 52px;
 	width: 2px;
 	background-color: #eeeeee;
 }
 
-.link-partner:nth-child(4n)::after,
+/* .link-partner:nth-child(4n)::after,
 .link-partner:last-child::after {
 	display: none;
-}
+} */
 
 .link-partner a {
 	opacity: 0.2;
