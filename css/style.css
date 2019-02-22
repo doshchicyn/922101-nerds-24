@@ -96,7 +96,7 @@ img {
 
 .header-navigation {
 	display: flex;
-	justify-content: space-between;	
+	justify-content: space-between;
 	align-items: center;
 	line-height: 30px;
 	font-size: 16px;
@@ -104,11 +104,9 @@ img {
 	font-weight: 700;
 }
 
-.navigation-wrapper {
-	width: 800px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.header-logo {
+	margin: 0;
+	padding: 0;
 }
 
 .header-logo img {
@@ -118,10 +116,19 @@ img {
 
 .header-menu {
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
+	justify-content: center;
 	flex-wrap: wrap;
-	width: 440px;
+}
+
+.header-menu li {
+	margin: 0;
+	padding: 0;
+	/* margin-left: 10px; */
+	margin-right: 46px;
+}
+
+.header-menu li:first-child {
+	margin-left: 0;
 }
 
 .menu-current {
@@ -129,14 +136,31 @@ img {
 	border-bottom: 2px solid #fb565a;
 }
 
-.header-basket {
-	display: flex;
-	justify-content: flex-end;
-	width: 160px;
+.header-basket li {
+	text-align: end;
+	padding-left: 42px;
+}
+
+.client-basket {
+	position: relative;
+}
+
+.client-basket::before {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: -41px;
+	width: 15px;
+	height: 15px;
+	background-image: url("../img/cart-icon.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .header-menu,
 .header-basket {
+	margin: 0;
+	padding: 0;
 	list-style-type: none;
 	color: #000000;
 	font-size: 16px;
@@ -229,7 +253,7 @@ img {
 .main-features .features-list {
 	margin: 0;
 	padding: 0;
-	padding-top: 63px;
+	padding-top: 78px;
 	padding-bottom: 80px;
 	display: flex;
 	justify-content: flex-start;
@@ -829,7 +853,7 @@ fieldset.border {
 	/* height: 590px; */
 	/* box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75); */
 	/* z-index: 1000; */
-
+}
 
 .modal-container {
 	width: 760px;
