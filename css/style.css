@@ -253,7 +253,6 @@ img {
 .main-features .features-list {
 	margin: 0;
 	padding: 0;
-	padding-top: 78px;
 	padding-bottom: 80px;
 	display: flex;
 	justify-content: flex-start;
@@ -262,15 +261,17 @@ img {
 	list-style: none;
 }
 
-.features-list .list-item {
+.features-list .list-item:not(:nth-child(3n)) {
 	margin: 0;
 	padding: 0;
 	width: 300px;
-	padding-right: 100px;
+	padding-top: 78px;
+	margin-right: 100px;
 }
 
-.features-list .list-item:nth-child(3) {
-	padding-right: 0;
+.features-list .list-item:nth-child(3n) {
+	padding-top: 78px;
+	margin-right: 0;
 }
 
 .list-item .item-image {
