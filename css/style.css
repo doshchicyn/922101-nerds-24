@@ -57,7 +57,7 @@ img {
 }
 
 .header-container {
-	min-height: 495px;
+	min-height: 493px;
 	padding-top: 50px; 
 	background-color: #eeeeee;
 	margin-bottom: 80px;
@@ -193,7 +193,7 @@ img {
 
 .slide-item {
 	display: none;
-	padding: 64px 0 78px 0;
+	padding: 65px 0 78px 0;
 }
 
 .slide-item:nth-child(1) {
@@ -245,7 +245,7 @@ img {
 .slide-controls {
 	position: absolute;
 	left: 50%;
-	bottom: 105px;
+	bottom: 103px;
 	z-index: 100;
 	width: 160px;
 	height: 18px;
@@ -324,7 +324,7 @@ img {
 	line-height: 55px;
 	color: #000000;
 	font-weight: 500;
-	margin-bottom: 27px;
+	margin-bottom: 26px;
 }
 
 .slide-desc {
