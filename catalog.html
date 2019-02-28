@@ -25,9 +25,9 @@
 							<li><a class="client-basket" href="#">Корзина</a></li>
 						</ul>
 					</nav>
-					<div class="welcome-text">
-						<h1>Магазин готовых шаблонов</h1>
-					</div>
+				</div>
+				<div class="welcome-text">
+					<h1>Магазин готовых шаблонов</h1>
 				</div>
 			</div>	
 		</header>
@@ -37,13 +37,12 @@
 					<section class="filter-settings">
 						<h2 class="visually-hidden">Форма поиска</h2>
 						<form class="filters" action="https://echo.htmlacademy.ru" method="get" name="search">
-						<!-- Блок Стоимость -->
-							<!-- <fieldset>
-								<legend class="cost">Стоимость:</legend>
-								<input type="range" id="cost-range" name="range" step="100" min="0" max="20000">
-							</fieldset> -->
 							<fieldset class="border">
-								<legend class="grid">Сетка:</legend>
+								<legend class="field-name cost">Стоимость:</legend>
+								<input class="range-item" type="range" id="cost-range" name="range" step="100" min="0" max="20000">
+							</fieldset>
+							<fieldset class="border">
+								<legend class="field-name grid">Сетка:</legend>
 								<ul class="grid-types">
 									<li class="grid-option">
 										<input class="input-radio" id="adaptive" type="radio" name="grid" value="adaptive" checked>
@@ -60,7 +59,7 @@
 								</ul>
 							</fieldset>
 							<fieldset class="border">
-								<legend class="features">Особенности:</legend>	
+								<legend class="field-name features">Особенности:</legend>	
 								<ul class="features-types">
 									<li class="feature-option">
 										<input class="input-checkbox" id="slider" type="checkbox" name="feature" value="slider" checked>
@@ -88,9 +87,28 @@
 						</form>
 					</section>
 					<div class="catalog">
-						<section class="sorting">
+						<section class="sorting-options">
 							<h2 class="visually-hidden">Сортировка</h2>
-							<!-- здесь будут элементы сортировки -->
+							<div class="sorter">
+								<span class="field-name">Сортировать:</span>
+							</div>
+							<ul class="sorting-controls">
+								<li>
+									<a class="sort-item active" href="#">По цене</a>
+								</li>
+								<li>
+									<a class="sort-item" href="#">По типу</a>
+								</li>
+								<li>
+									<a class="sort-item" href="#">По названию</a>
+								</li>
+								<li>
+									<a class="sort-item" href="#">По убыванию</a>
+								</li>
+								<li>
+									<a class="sort-item active" href="#">По возрастанию</a>
+								</li>
+							</ul>
 						</section>
 						<section class="example-list">
 							<h2 class="visually-hidden">Карточки готовых сайтов</h2>
@@ -187,6 +205,22 @@
 								</li>
 							</ul>
 						</section>
+						<div class="pagination">
+							<ul class="pages-list">
+								<li>
+									<a class="page active" href="#">1</a>
+								</li>
+								<li>
+									<a class="page" href="#">2</a>
+								</li>
+								<li>
+									<a class="page" href="#">3</a>
+								</li>
+								<li>
+									<a class="page next-page" href="#">Следующая</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

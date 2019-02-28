@@ -38,6 +38,10 @@ body > * > * > * > * > * > * > * {
 	background-color: rgb(32, 0, 211);
 } */
 
+.brd {
+	border: 1px solid black;
+}
+
 /* основные стили */
 
 a {
@@ -67,7 +71,7 @@ img {
 	min-height: 305px;
 	padding-top: 50px; 
 	background-color: #eeeeee;
-	margin-bottom: 80px;
+	margin-bottom: 55px;
 }
 
 .main-banners {
@@ -347,11 +351,17 @@ img {
 .welcome-text {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 }
 
 .welcome-text h1 {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	top: 67px;
+	left: -1px;
+
 	font-size: 55px;
 	line-height: 55px;
 	color: #000000;
@@ -799,6 +809,56 @@ background-color: #efc84a;
 	padding: 16px 45px;
 }
 
+.main-content {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 66px;
+}
+
+.filter-settings {
+	width: 260px;
+	min-height: 780px;
+
+
+	box-sizing: border-box;
+}
+
+.catalog {
+	width: 760px;
+	box-sizing: border-box;
+}
+
+.sorting-options {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 54px;
+}
+
+.sorting-controls {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	min-width: 360px;
+}
+
+.example-list {
+	padding: 0;
+	margin: 0;
+}
+
+.pages-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+/* footer content */
+
 .main-footer {
 	margin-top: 65px;
 	margin-bottom: 69px;
@@ -892,7 +952,7 @@ background-color: #efc84a;
 	line-height: 36px;
 	font-weight: bold;
 	color: #000000;
-	margin-bottom: 11px;
+	margin-bottom: 9px;
 }
 
 .promo-discount {
@@ -904,22 +964,27 @@ background-color: #efc84a;
 	color: #444444;
 }
 
-.welcome-text h1 {
-	font-size: 55px;
-	line-height: 55px;
-	font-weight: 500;
-}
-
 fieldset.border {
+	padding: 0;
+	margin: 0;
 	border: none;
 }
 
-.grid, .features {
+.field-name {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #000000;
+}
+
+.range-item {
+	background-color: #eeeeee;
+	background-size: 260px 80px;
+}
+
+.sorter span {
+	line-height: 24px;
 }
 
 .grid-types,
@@ -956,13 +1021,25 @@ fieldset.border {
 }
 
 .examples {
+	padding: 0;
+	margin: 0;
 	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 
 .example-item {
 	position: relative;
 	width: 360px;
 	height: 576px;
+	box-sizing: border-box;
+	margin-bottom: 73px;
+}
+
+.example-item:nth-child(2n+1) {
+	margin-right: 39px;
 }
 
 .item-container {
