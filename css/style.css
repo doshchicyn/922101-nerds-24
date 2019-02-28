@@ -398,7 +398,7 @@ img {
 .list-item .item-title {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 14px;
+	margin-bottom: 18px;
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: bold;
@@ -429,8 +429,9 @@ img {
 
 .btn {
 	font-size: 16px;
-	line-height: 18px;
 	font-weight: 500;
+	font-family: "Roboto", Arial, sans-serif;
+	line-height: 18px;
 	text-align: center;
 	text-transform: uppercase;
 	color: #ffffff;
@@ -446,7 +447,7 @@ img {
 
 .slide-info-btn {
 	display: inline-block;
-	padding: 16px 53px;
+	padding: 16px 54px;
 }
 
 .list-item .order-btn {
@@ -505,7 +506,7 @@ background-color: #efc84a;
 .desc-container {
 	margin: 0;
 	padding: 0;
-	padding-top: 40px;
+	padding-top: 33px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -516,7 +517,7 @@ background-color: #efc84a;
 .column-our-work {
 	margin: 0;
 	padding: 0;
-	padding-top: 35px;
+	padding-top: 40px;
 	width: 660px;
 }
 
@@ -530,17 +531,17 @@ background-color: #efc84a;
 	display: inline-block;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 33px;
+	padding-bottom: 33px;
 	font-size: 45px;
 	line-height: 45px;
-	font-weight: 400;
+	font-weight: 500;
 	color: #000000;
 }
 
 .column-our-work .work-desc {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 41px;
+	padding-bottom: 40px;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: normal;
@@ -550,7 +551,7 @@ background-color: #efc84a;
 .order-list-header {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 22px;
+	padding-bottom: 24px;
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
@@ -627,8 +628,8 @@ background-color: #efc84a;
 .statistics .theme {
 	margin: 0;
 	padding: 0;
-	margin-top: 35px;
-	margin-bottom: 39px;
+	padding-top: 33px;
+	padding-bottom: 39px;
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
@@ -754,7 +755,7 @@ background-color: #efc84a;
 
 .contact-desc-container {
 	display: block;
-	padding-top: 48px;
+	padding-top: 50px;
 	padding-left: 50px;
 }
 
@@ -809,6 +810,8 @@ background-color: #efc84a;
 }
 
 .footer-socials {
+	margin: 0;
+	padding: 0;
 	max-width: 260px;
 }
 
@@ -816,7 +819,7 @@ background-color: #efc84a;
 	padding: 0;
 	margin: 0;
 	margin-left: 140px;
-	margin-top: 5px;
+	margin-top: 7px;
 }
 
 .social-links {
