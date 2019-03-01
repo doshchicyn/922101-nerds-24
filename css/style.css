@@ -1023,6 +1023,7 @@ fieldset.border {
 .examples {
 	padding: 0;
 	margin: 0;
+	padding-top: 40px;	
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
@@ -1030,12 +1031,54 @@ fieldset.border {
 	align-items: flex-start;
 }
 
+
+/* закончил здесь*/
+
 .example-item {
+	padding: 0;
+	margin: 0;
 	position: relative;
 	width: 360px;
 	height: 576px;
 	box-sizing: border-box;
 	margin-bottom: 73px;
+	box-shadow: 0 -40px 0 0 #EAEAEA;
+	/*background-image: url("../img/img-sedona.jpg");*/
+}
+
+.example-item .spots {
+  display: block;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border-radius: 50%;
+  top: -27px;
+  left: 39px;
+}
+
+.example-item .spots::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border-radius: 50%;
+  left: -23px;
+}
+
+.example-item .spots::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border-radius: 50%;
+  left: 23px;
+}
+
+.example-item:hover {
+	box-shadow: 0 -40px 0 0 #4C4C4C;
 }
 
 .example-item:nth-child(2n+1) {
@@ -1044,10 +1087,6 @@ fieldset.border {
 
 .item-container {
 	display: none;
-}
-
-.example-item:hover {
-	box-shadow: 0 0 15px 2px #d3d3d3;
 }
 
 .example-item:hover .item-container {
@@ -1097,11 +1136,6 @@ fieldset.border {
 	background-color: #d7373b;
 	box-shadow: inset 0px 3px 0 0 rgba(193, 49, 53, 0.6);
 	outline: none;
-}
-
-.screen-container {
-	display: flex;
-	flex-direction: column;
 }
 
 .panel {
