@@ -812,7 +812,7 @@ background-color: #efc84a;
 .main-content {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 66px;
+	margin-bottom: 48px;
 }
 
 .filter-settings {
@@ -851,10 +851,59 @@ background-color: #efc84a;
 	margin: 0;
 }
 
+.pagination {
+	position: relative;
+	bottom: 12px;
+}
+
 .pages-list {
 	padding: 0;
 	margin: 0;
 	list-style: none;
+	display: flex;
+}
+
+.page-item {
+	padding: 0;
+	margin: 0;
+	margin-right: 11px;
+
+	display: flex;
+}
+
+.page-item.next {
+	margin-right: 0;
+}
+
+.page {
+	padding: 15px 20px;
+	background-color: #eeeeee;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #000000;
+}
+
+.page.current {
+	background-color: #ffffff;
+	/* border: 3px solid #dbdbdb; */
+}
+
+.page:hover {
+	background-color: #dfdfdf;
+	transition: 0.1s;
+}
+
+.page:active {
+	background-color: #d5d5d5;
+	box-shadow: inset 0px 3px 0 0 rgba(192, 192, 192, 0.6);
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.page.next-page {
+	padding: 15px 80px;
 }
 
 /* footer content */
@@ -1010,14 +1059,12 @@ fieldset.border {
 
 .view-btn:hover {
 	background-color: #dfdfdf;
-	
 }
 
 .view-btn:active {
 	background-color: #d5d5d5;
 	box-shadow: inset 0px 3px 0 0 rgba(192, 192, 192, 0.6);
 	color: rgba(0, 0, 0, 0.3);
-	outline: none;
 }
 
 .examples {
@@ -1027,12 +1074,8 @@ fieldset.border {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 	align-items: flex-start;
 }
-
-
-/* закончил здесь*/
 
 .example-item {
 	padding: 0;
@@ -1043,12 +1086,11 @@ fieldset.border {
 	box-sizing: border-box;
 	margin-bottom: 73px;
 	box-shadow: 0 -40px 0 0 #EAEAEA;
-	/*background-image: url("../img/img-sedona.jpg");*/
 }
 
 .example-item .spots {
   display: block;
-  position: relative;
+  position: absolute;
   width: 14px;
   height: 14px;
   background-color: white;
@@ -1082,7 +1124,7 @@ fieldset.border {
 }
 
 .example-item:nth-child(2n+1) {
-	margin-right: 39px;
+	margin-right: 40px;
 }
 
 .item-container {
@@ -1100,9 +1142,12 @@ fieldset.border {
 
 .item-details {
 	width: 360px;
-	margin: 35px auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 27px auto;
 	text-align: center;
 	word-wrap: break-word;
+	box-sizing: border-box
 }
 
 .item-link h3 {
@@ -1115,6 +1160,10 @@ fieldset.border {
 }
 
 .item-desc {
+	padding: 0;
+	margin: 0;
+	margin-top: 14px;
+	margin-bottom: 32px;
 	font-size: 16px;
 	line-height: 18px;
 	color: #666;
@@ -1135,7 +1184,6 @@ fieldset.border {
 .price-btn:focus {
 	background-color: #d7373b;
 	box-shadow: inset 0px 3px 0 0 rgba(193, 49, 53, 0.6);
-	outline: none;
 }
 
 .panel {
