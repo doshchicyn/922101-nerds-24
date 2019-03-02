@@ -69,7 +69,7 @@ img {
 
 .header-container-inner {
 	min-height: 305px;
-	padding-top: 47px; 
+	padding-top: 50px; 
 	background-color: #eeeeee;
 	margin-bottom: 55px;
 }
@@ -87,6 +87,8 @@ img {
 }
 
 .main-header {
+	padding: 0;
+	margin: 0;
 	margin-bottom: 4px;
 }
 
@@ -370,7 +372,7 @@ img {
 	padding: 0;
 	margin: 0;
 	position: relative;
-	top: 67px;
+	top: 63px;
 	left: -1px;
 
 	font-size: 55px;
@@ -587,7 +589,7 @@ background-color: #efc84a;
 .column-our-work .order-listing {
 	padding: 0;
 	margin: 0;
-	padding-left: 37px;
+	padding-left: 36px;
 	display: flex;
 	flex-direction: column;
 
@@ -614,10 +616,10 @@ background-color: #efc84a;
 .order-listing .list-item::before {
 	content: "";
 	position: absolute;
-	left: -38px;
-	top: 11px;
-	border: 2px solid #fb565a;
-	width: 25px;
+	left: -35px;
+	top: 12px;
+	border: 1px solid #fb565a;
+	width: 23px;
 
 }
 
@@ -943,14 +945,14 @@ background-color: #efc84a;
 .footer-socials {
 	margin: 0;
 	padding: 0;
-	max-width: 260px;
+	margin-right: 120px;
+	width: 280px;
 }
 
 .footer-promo {
 	padding: 0;
 	margin: 0;
-	margin-left: 140px;
-	margin-top: 7px;
+	margin-top: 6px;
 }
 
 .social-links {
@@ -962,10 +964,9 @@ background-color: #efc84a;
 }
 
 .social-links .link-item {
-	margin-right: 11px;
-	margin-bottom: 11px;
-
-	width: 79px;
+	margin-right: 12px;
+	margin-bottom: 12px;
+		width: 79px;
 	height: 79px;
 	display: flex;
 	align-items: center;
@@ -1036,6 +1037,32 @@ fieldset.border {
 	padding: 0;
 	margin: 0;
 	border: none;
+}
+
+.cost-filter {
+
+	height: 264px;
+}
+
+.grid-filter {
+	padding: 0;
+	margin: 0;
+}
+
+.grid-types {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-bottom: 71px;
+}
+
+.grid-option {
+	padding: 0;
+	margin: 0;
+	padding-left: 40px;
+	margin-bottom: 10px;
 }
 
 .field-name {
