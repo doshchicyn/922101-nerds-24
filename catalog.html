@@ -38,28 +38,58 @@
 						<h2 class="visually-hidden">Форма поиска</h2>
 						<form class="filters" action="https://echo.htmlacademy.ru" method="get" name="search">
 							<fieldset class="border cost-filter">
-								<legend class="field-name cost">Стоимость:</legend>
-								<input class="range-item" type="range" id="cost-range" name="range" step="100" min="0" max="20000">
+								<legend class="field-name">Стоимость:</legend>
+								<div class="cost-container">
+									<div class="range-controls">
+										<div class="scale">
+											<div class="bar" style="margin-left: 0%; width: 70%;">
+											</div>
+										</div>
+										<div class="toggle toggle-min">
+										</div>
+										<div class="toggle toggle-max">
+										</div>
+									</div>
+									<div class="price-controls">
+										<label class="min-range">
+											От <input type="text" name="min-range" value="0" maxlength="6">
+										</label>
+										<label class="max-range">
+											До <input type="text" name="max-range" value="15000" maxlength="6">
+										</label>
+									</div>
+								</div>
 							</fieldset>
 							<fieldset class="border grid-filter">
-								<legend class="field-name grid">Сетка:</legend>
-								<ul class="grid-types">
-									<li class="grid-option">
-										<input class="input-radio" id="adaptive" type="radio" name="grid" value="adaptive" checked>
-										<label for="adaptive">Адаптивная</label>
-									</li>
-									<li class="grid-option">
-										<input class="input-radio" id="fix" type="radio" name="grid" value="fix">
-										<label for="fix">Фиксированная</label>
-									</li>
-									<li class="grid-option">
-										<input class="input-radio" id="flex" type="radio" name="grid" value="flex">
-										<label for="flex">Резиновая</label>
-									</li>
-								</ul>
+								<legend class="field-name">Сетка:</legend>
+								<div class="grid-container">
+									<ul class="grid-types">
+										<li class="grid-option">
+											<label for="adaptive">
+												<input class="input-radio visually-hidden" id="adaptive" type="radio" name="grid" value="adaptive" checked>
+												<span class="radio-indicator"></span>
+												<span class="type-name">Адаптивная</span>
+											</label>
+										</li>
+										<li class="grid-option">
+											<label for="fix">
+												<input class="input-radio visually-hidden" id="fix" type="radio" name="grid" value="fix">
+												<span class="radio-indicator"></span>
+												<span class="type-name">Фиксированная</span>
+											</label>
+										</li>
+										<li class="grid-option">
+											<label for="flex">
+												<input class="input-radio visually-hidden" id="flex" type="radio" name="grid" value="flex">
+												<span class="radio-indicator"></span>
+												<span class="type-name">Резиновая</span>
+											</label>
+										</li>
+									</ul>
+								</div>
 							</fieldset>
-							<fieldset class="border">
-								<legend class="field-name features">Особенности:</legend>	
+							<fieldset class="border features-filter">
+								<legend class="field-name">Особенности:</legend>	
 								<ul class="features-types">
 									<li class="feature-option">
 										<input class="input-checkbox" id="slider" type="checkbox" name="feature" value="slider" checked>
