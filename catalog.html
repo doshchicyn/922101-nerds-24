@@ -80,7 +80,7 @@
 										</li>
 										<li class="grid-option">
 											<label for="flex">
-												<input class="input-radio visually-hidden" id="flex" type="radio" name="grid" value="flex">
+												<input class="input-radio visually-hidden" id="flex" type="radio" name="grid" value="flex" disabled="">
 												<span class="radio-indicator"></span>
 												<span class="type-name">Резиновая</span>
 											</label>
@@ -89,29 +89,46 @@
 								</div>
 							</fieldset>
 							<fieldset class="border features-filter">
-								<legend class="field-name">Особенности:</legend>	
-								<ul class="features-types">
-									<li class="feature-option">
-										<input class="input-checkbox" id="slider" type="checkbox" name="feature" value="slider" checked>
-										<label for="slider">Слайдер</label>
-									</li>
-									<li>
-										<input class="input-checkbox" id="block" type="checkbox" name="feature" value="block">
-										<label for="block">Блок преимуществ</label>
-									</li>
-									<li>
-										<input class="input-checkbox" id="news" type="checkbox" name="feature" value="news" checked>
-										<label for="news">Новости</label>
-									</li>
-									<li>
-										<input class="input-checkbox" id="gallery" type="checkbox" name="feature" value="gallery">
-										<label for="gallery">Галерея</label>
-									</li>
-									<li>
-										<input class="input-checkbox" id="basket" type="checkbox" name="feature" value="basket">
-										<label for="basket">Корзина</label>
-									</li>
-								</ul>
+								<legend class="field-name">Особенности:</legend>
+								<div class="features-container">
+									<ul class="features-types">
+										<li class="feature-option">
+											<label for="slider">
+												<input class="input-checkbox visually-hidden" id="slider" type="checkbox" name="feature" value="slider" checked>
+												<span class="checkbox-indicator"></span>
+												<span class="type-name">Слайдер</span>
+											 </label>
+										</li>
+										<li class="feature-option">
+											<label for="block">
+												<input class="input-checkbox visually-hidden" id="block" type="checkbox" name="feature" value="block">
+												<span class="checkbox-indicator"></span>
+												<span class="type-name">Блок преимуществ</span>
+											</label>
+										</li>
+										<li class="feature-option">
+											<label for="news">
+												<input class="input-checkbox visually-hidden" id="news" type="checkbox" name="feature" value="news" checked>
+												<span class="checkbox-indicator"></span>
+												<span class="type-name">Новости</span>
+											</label>
+										</li>
+										<li class="feature-option">
+											<label for="gallery">
+												<input class="input-checkbox visually-hidden" id="gallery" type="checkbox" name="feature" value="gallery" disabled="">
+												<span class="checkbox-indicator"></span>
+												<span class="type-name">Галерея</span>
+											</label>
+										</li>
+										<li class="feature-option">
+											<label for="basket">
+												<input class="input-checkbox visually-hidden" id="basket" type="checkbox" name="feature" value="basket">
+												<span class="checkbox-indicator"></span>
+												<span class="type-name">Корзина</span>
+											</label>
+										</li>	
+									</ul>
+								</div>
 							</fieldset>
 							<button class="btn view-btn" type="submit">Показать</button>
 						</form>
@@ -313,5 +330,6 @@
 				<button class="close-modal" type="button" aria-label="Закрыть"></button>
 			</div>
 		</section>
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	</body>
 </html>

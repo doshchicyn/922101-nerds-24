@@ -1065,6 +1065,10 @@ background-color: #efc84a;
 	margin-bottom: 46px;
 }
 
+.filters .features-filter {
+	margin-bottom: 50px;
+}
+
 .field-name {
 	font-size: 18px;
 	line-height: 30px;
@@ -1152,7 +1156,8 @@ background-color: #efc84a;
 	text-align: right;
 }
 
-.grid-container {
+.grid-container,
+.features-container {
 	width: 260px;
 	margin-top: 15px;
 }
@@ -1177,10 +1182,6 @@ background-color: #efc84a;
 	margin-bottom: 0;
 }
 
-.grid-option input {
-	margin-right: 12px;
-}
-
 .grid-option .input-radio[type="radio"] + .radio-indicator {
 	position: absolute;
 	left: 0;
@@ -1191,11 +1192,14 @@ background-color: #efc84a;
 	border-radius: 50%;
 }
 
-.grid-option .input-radio[type="radio"]:hover + .radio-indicator,
-.grid-option .input-radio[type="radio"]:focus + .radio-indicator {
-	border-color: rgba(77, 77, 77, 1);
-	outline: thin dotted;
-	outline: 5px auto -webkit-focus-ring-color;
+.feature-option .input-checkbox[type="checkbox"] + .checkbox-indicator {
+	position: absolute;
+	left: 1px;
+	top: -1px;
+	width: 19px;
+	height: 19px;
+	border: 2px solid rgba(166, 166, 166, 1);
+	border-radius: 3px;
 }
 
 .grid-option .input-radio[type="radio"]:checked + .radio-indicator::before {
@@ -1209,28 +1213,75 @@ background-color: #efc84a;
 	border-radius: 50%;
 }
 
+.feature-option .input-checkbox[type="checkbox"]:checked + .checkbox-indicator::before {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 19px;
+	height: 4px;
+	background-color: rgba(166, 166, 166, 1);
+	border: 2px solid #ffffff;
+	transform: rotate(135deg);
+}
+
+.feature-option .input-checkbox[type="checkbox"]:checked + .checkbox-indicator::after {
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: 2px;
+	width: 11px;
+	height: 4px;
+	background-color: rgba(166, 166, 166, 1);
+	transform: rotate(45deg);
+}
+
+.grid-option .input-radio[type="radio"]:hover + .radio-indicator,
+.grid-option .input-radio[type="radio"]:focus + .radio-indicator,
+.feature-option .input-checkbox[type="checkbox"]:hover + .checkbox-indicator,
+.feature-option .input-checkbox[type="checkbox"]:focus + .checkbox-indicator {
+	border-color: rgba(77, 77, 77, 1);
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
 .grid-option .input-radio[type="radio"]:hover:checked + .radio-indicator::before,
-.grid-option .input-radio[type="radio"]:focus:checked + .radio-indicator::before {
+.grid-option .input-radio[type="radio"]:focus:checked + .radio-indicator::before,
+.feature-option .input-checkbox[type="checkbox"]:hover:checked + .checkbox-indicator::before,
+.feature-option .input-checkbox[type="checkbox"]:hover:checked + .checkbox-indicator::after,
+.feature-option .input-checkbox[type="checkbox"]:focus:checked + .checkbox-indicator::before,
+.feature-option .input-checkbox[type="checkbox"]:focus:checked + .checkbox-indicator::after {
 	background-color: rgba(77, 77, 77, 1);
 }
 
-
 .grid-option .input-radio[disabled] + .radio-indicator,
 .grid-option .input-radio[disabled]:hover + .radio-indicator,
-.grid-option .input-radio[disabled]:focus + .radio-indicator {
+.grid-option .input-radio[disabled]:focus + .radio-indicator,
+.feature-option .input-checkbox[disabled] + .checkbox-indicator,
+.feature-option .input-checkbox[disabled]:hover + .checkbox-indicator,
+.feature-option .input-checkbox[disabled]:focus + .checkbox-indicator {
 	border-color: rgba(77, 77, 77, 0.1);
 	outline: none;
 }
 
 .grid-option .input-radio[disabled] ~ .type-name,
 .grid-option .input-radio[disabled]:hover ~ .type-name,
-.grid-option .input-radio[disabled]:focus ~ .type-name {
+.grid-option .input-radio[disabled]:focus ~ .type-name,
+.feature-option .input-checkbox[disabled] ~ .type-name,
+.feature-option .input-checkbox[disabled]:hover ~ .type-name,
+.feature-option .input-checkbox[disabled]:focus ~ .type-name {
 	color: rgba(77, 77, 77, 0.1);
 }
 
 .grid-option .input-radio[disabled]:checked + .radio-indicator::before,
 .grid-option .input-radio[disabled]:hover:checked + .radio-indicator::before,
-.grid-option .input-radio[disabled]:focus:checked + .radio-indicator::before {
+.grid-option .input-radio[disabled]:focus:checked + .radio-indicator::before,
+.feature-option .input-checkbox[disabled]:checked + .checkbox-indicator::before,
+.feature-option .input-checkbox[disabled]:checked + .checkbox-indicator::after,
+.feature-option .input-checkbox[disabled]:hover:checked + .checkbox-indicator::before,
+.feature-option .input-checkbox[disabled]:hover:checked + .checkbox-indicator::after,
+.feature-option .input-checkbox[disabled]:focus:checked + .checkbox-indicator::before,
+.feature-option .input-checkbox[disabled]:focus:checked + .checkbox-indicator::after {
 	background-color: rgba(77, 77, 77, 0.1);
 }
 
@@ -1261,6 +1312,27 @@ background-color: #efc84a;
 .grid-option .input-radio[disabled] ~ label {
 	color: #283136;
 	opacity: 0.3;
+}
+
+.features-filter .features-types {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+
+.feature-option {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	padding-left: 36px;
+	margin-bottom: 20px;
+}
+
+.feature-option:last-child {
+	margin-bottom: 0;
 }
 
 .view-btn {
