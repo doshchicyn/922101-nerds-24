@@ -139,23 +139,35 @@
 							<div class="sorter">
 								<span class="field-name">Сортировать:</span>
 							</div>
-							<ul class="sorting-controls">
-								<li>
-									<a class="sort-item active" href="#">По цене</a>
-								</li>
-								<li>
-									<a class="sort-item" href="#">По типу</a>
-								</li>
-								<li>
-									<a class="sort-item" href="#">По названию</a>
-								</li>
-								<li>
-									<a class="sort-item" href="#">По убыванию</a>
-								</li>
-								<li>
-									<a class="sort-item active" href="#">По возрастанию</a>
-								</li>
-							</ul>
+							<div class="sorting-container">
+								<ul class="sorting-controls">
+									<li>
+										<a class="sort-item current" href="#">По цене</a>
+									</li>
+									<li>
+										<a class="sort-item" href="#">По типу</a>
+									</li>
+									<li>
+										<a class="sort-item" href="#">По названию</a>
+									</li>
+								</ul>
+								<ul class="sorting-directions">
+									<li>
+										<a class="sort-item current" href="#" aria-label="По убыванию">
+											<svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+												<path fill="rgba(167, 167, 167, 0.2)" d="M5.5 10L0 0h11"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a class="sort-item" href="#" aria-label="По возрастанию">
+											<svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+												<path fill="rgba(167, 167, 167, 0.2)" d="M5.5 0L0 10h11z"/>
+											</svg>
+										</a>
+									</li>
+								</ul>								
+							</div>
 						</section>
 						<section class="example-list">
 							<h2 class="visually-hidden">Карточки готовых сайтов</h2>
@@ -330,6 +342,5 @@
 				<button class="close-modal" type="button" aria-label="Закрыть"></button>
 			</div>
 		</section>
-		<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 	</body>
 </html>

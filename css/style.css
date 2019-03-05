@@ -869,17 +869,69 @@ background-color: #efc84a;
 	margin: 0;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 	margin-bottom: 54px;
 }
 
-.sorting-controls {
+.sorting-container {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sorting-controls,
+.sorting-directions {
 	padding: 0;
 	margin: 0;
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
-	min-width: 360px;
+	align-items: center;
+}
+
+.sorting-container .sorting-controls {
+	margin-right: 48px;
+}
+
+.sorting-controls li {
+	padding: 0;
+	margin: 0;
+	margin-right: 26px;
+}
+
+.sorting-directions li {
+	padding: 0;
+	margin: 0;
+	margin-right: 19px;
+}
+
+.sorting-controls li:last-child,
+.sorting-directions li:last-child {
+	margin-right: 0;
+}
+
+.sorting-controls .sort-item {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 500;
+	color: rgba(0,0,0, 0.3);
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.sorting-controls .sort-item:hover,
+.sorting-controls .sort-item:focus {
+	color: rgba(0,0,0, 0.6);
+}
+
+.sort-item.current {
+	color: rgba(0, 0, 0, 1);
+}
+
+.sort-item.current > .arrow-down path {
+	fill: rgba(0, 0, 0, 1);
 }
 
 .example-list {
