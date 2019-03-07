@@ -775,6 +775,7 @@ background-color: #efc84a;
 }
 
 .contacts {
+	position: relative;
 	background-image: url("/img/map.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1136,7 +1137,6 @@ background-color: #efc84a;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
-	text-transform: uppercase;
 	color: #000000;
 }
 
@@ -1522,41 +1522,133 @@ background-color: #efc84a;
 }
 
 /* модальное окно */
+.modal {
+	color: #000000;
+	background-color: #ffffff;
+	box-shadow: 0 20px 60px 0 rgba(0, 1, 1, 0.75);
+}
+
 .modal-write-us {
+	position: absolute;
 	display: none;
-	/* position: absolute; */
-	/* bottom: 180px; */
-	/* left: auto; */
-	/* width: 960px;
-	/* height: 590px; */
-	/* box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75); */
-	/* z-index: 1000; */
+	top: -137px;
+	left: 50%;
+	margin-left: -480px;
+	z-index: 1000;
+	width: 960px;
+	padding: 63px 100px;
+	box-sizing: border-box;
+}
+
+.modal-show {
+	display: block;
 }
 
 .modal-container {
-	width: 760px;
-	height: 435px;
-	padding-top: 75px;
-	padding-left: 100px;
-	padding-right: 100px;
-	padding-bottom: 85px;
+	position: relative;
 }
 
-.modal-title {
+.modal-container .close-modal {
+	position: absolute;
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	top: 12px;
+	right: -10px;
+	font-size: 0;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.modal-container .close-modal::before,
+.modal-container .close-modal::after {
+	content: '';
+	position: absolute;
+	top: 9px;
+	left: -3px;
+	width: 27px;
+	height: 4px;
+	border-radius: 2px;
+	background-color: rgba(254, 205, 206, 1);
+}
+
+.modal-container .close-modal::before {
+	transform: rotate(-45deg);
+}
+
+.modal-container .close-modal::after {
+	transform: rotate(45deg);
+}
+
+.modal-container .close-modal:hover::before,
+.modal-container .close-modal:hover::after,
+.modal-container .close-modal:focus::before,
+.modal-container .close-modal:focus::after {
+	background-color: rgba(251, 85, 89, 1);
+}
+
+.modal-container .close-modal:active::before,
+.modal-container .close-modal:active::after {
+	background-color: rgba(255, 239, 239, 1);
+}
+
+.modal-container > .modal-title {
+	display: inline-block;
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
 	color: #000000;
+	margin-bottom: 41px;
 }
 
-.modal-item input,
-.modal-item textarea {
+.feedback .data-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 34px;
+}
+
+.feedback > .modal-item {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 43px;
+}
+
+.data-container > .modal-item {
+	padding: 0;
+	margin: 0;
+	width: 360px;
+	box-sizing: border-box;
+}
+
+
+.modal-item > label {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 9px;
+}
+
+.modal-item > input,
+.modal-item > textarea {
+	width: 100%;
+	padding: 14px 12px;
+	box-sizing: border-box;
+	text-align: left;
 	border: 2px solid #d7dcde;
 	border-radius: 3px;
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: normal;
+	font-weight: 400;
 	color: #000000;
+}
+
+.modal-item > textarea {
+	padding-top: 11px;
+}
+
+.data-container p:first-child {
+	margin-right: 40px;
 }
 
 .modal-item label {

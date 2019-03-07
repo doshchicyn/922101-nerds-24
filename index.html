@@ -6,6 +6,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/script.js"></script>
 	</head>
 	<body>
 		<header class="header-container">
@@ -200,6 +201,30 @@
 						</address>
 					</div>
 				</div>
+				<section class="modal modal-write-us">
+					<h2 class="visually-hidden">Форма обратной связи</h2>
+					<div class="modal-container">
+						<b class="modal-title">Напишите нам</b>
+						<form class="feedback" action="https://echo.htmlacademy.ru" method="post" name="write-us">
+							<div class="data-container">
+								<p class="modal-item">
+									<label class="field-name" for="name">Ваше имя:</label>
+									<input id="name" type="text" name="client_name" value="" placeholder="Имя Фамилия" pattern="[А-Яа-яЁё]{1,30}" maxlength="30" required>
+								</p>
+								<p class="modal-item">
+									<label class="field-name" for="email">Ваш e-mail:</label>
+									<input id="email" type="email" name="email" value="" placeholder="email@example.com" required>
+								</p>
+							</div>
+							<p class="modal-item">
+								<label class="field-name" for="text-letter">Текст письма:</label>
+								<textarea id="text-letter" name="text-letter" placeholder="В свободной форме" rows="5" required></textarea>
+							</p>
+							<button class="btn submit-btn red-btn" type="submit">Отправить</button>
+						</form>
+						<button class="close-modal" type="button" aria-label="Закрыть"></button>
+					</div>
+				</section>
 			</section>
 		</main>
 		<footer class="main-footer">
@@ -231,29 +256,20 @@
 				</div>
 			</div>
 		</footer>
-		<section class="modal-write-us">
-			<div class="modal-container">
-				<h2 class="visually-hidden">Форма обратной связи</h2>
-				<b class="modal-title">Напишите нам</b>
-				<form class="feedback" action="https://echo.htmlacademy.ru" method="post" name="write-us">
-					<div class="wrap">
-						<p class="modal-item">
-							<label class="field-name" for="name">Ваше имя:</label>
-							<input id="name" type="text" name="name" value="" placeholder="Имя Фамилия" maxlength="30" required>
-						</p>
-						<p class="modal-item">
-							<label class="field-name" for="email">Ваш e-mail:</label>
-							<input id="email" type="email" name="email" value="" placeholder="email@example.com" required>
-						</p>
-						<p class="modal-item">
-							<label class="field-name" for="text-letter">Текст письма:</label>
-							<textarea id="text-letter" name="text-letter" placeholder="В свободной форме" cols="70" rows="10" ></textarea>
-						</p>
-					</div>
-					<button class="btn submit-btn red-btn" type="submit">Отправить</button>
-				</form>
-				<button class="close-modal" type="button" aria-label="Закрыть"></button>
-			</div>
-		</section>
+		<script>
+			var sendbtn = document.querySelector (".send-us-btn");
+			var popup = document.querySelector(".modal-write-us");
+			var close = document.querySelector(".close-modal");
+
+			sendbtn.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				popup.classList.add("modal-show");
+			});
+
+			close.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				popup.classList.remove("modal-show");
+			});
+		</script>
 	</body>
 </html>
