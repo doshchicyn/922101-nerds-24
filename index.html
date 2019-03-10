@@ -6,7 +6,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
-		<script type="text/javascript" src="js/script.js"></script>
 	</head>
 	<body>
 		<header class="header-container">
@@ -209,16 +208,16 @@
 							<div class="data-container">
 								<p class="modal-item">
 									<label class="field-name" for="name">Ваше имя:</label>
-									<input id="name" type="text" name="client_name" value="" placeholder="Имя Фамилия" pattern="[А-Яа-яЁё]{1,30}" maxlength="30" required>
+									<input id="name" type="text" name="cln_name" value="" placeholder="Имя Фамилия" pattern="[А-Яа-яЁё]{1,30}" maxlength="30" title="Только кириллические символы.">
 								</p>
 								<p class="modal-item">
 									<label class="field-name" for="email">Ваш e-mail:</label>
-									<input id="email" type="email" name="email" value="" placeholder="email@example.com" required>
+									<input id="email" type="email" name="email" value="" placeholder="email@example.com">
 								</p>
 							</div>
 							<p class="modal-item">
 								<label class="field-name" for="text-letter">Текст письма:</label>
-								<textarea id="text-letter" name="text-letter" placeholder="В свободной форме" rows="5" required></textarea>
+								<textarea id="text-letter" name="text-letter" placeholder="В свободной форме" rows="5"></textarea>
 							</p>
 							<button class="btn submit-btn red-btn" type="submit">Отправить</button>
 						</form>
@@ -256,20 +255,6 @@
 				</div>
 			</div>
 		</footer>
-		<script>
-			var sendbtn = document.querySelector (".send-us-btn");
-			var popup = document.querySelector(".modal-write-us");
-			var close = document.querySelector(".close-modal");
-
-			sendbtn.addEventListener("click", function (evt) {
-				evt.preventDefault();
-				popup.classList.add("modal-show");
-			});
-
-			close.addEventListener("click", function (evt) {
-				evt.preventDefault();
-				popup.classList.remove("modal-show");
-			});
-		</script>
+		<script src="js/script.js"></script>
 	</body>
 </html>

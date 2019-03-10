@@ -173,7 +173,7 @@
 						<section class="example-list">
 							<h2 class="visually-hidden">Карточки готовых сайтов</h2>
 							<ul class="examples">
-								<li class="example-item">
+								<li class="example-item" tabindex="0">
 									<img class="browser" src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
 									<div class="item-container">
 										<div class="item-details">
@@ -185,7 +185,7 @@
 										</div>
 									</div>
 								</li>
-								<li class="example-item">
+								<li class="example-item" tabindex="0">
 									<img class="browser" src="img/img-pink.jpg" alt="Pink" width="360" height="576">
 									<div class="item-container">
 										<div class="item-details">
@@ -197,7 +197,7 @@
 										</div>
 									</div>
 								</li>
-								<li class="example-item">
+								<li class="example-item" tabindex="0">
 									<img class="browser" src="img/img-barbershop.jpg" alt="Барбершоп Бородинский" width="360" height="576">
 									<div class="item-container">
 										<div class="item-details">
@@ -209,7 +209,7 @@
 										</div>
 									</div>
 								</li>
-								<li class="example-item">
+								<li class="example-item" tabindex="0">
 									<img class="browser" src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
 									<div class="item-container">
 										<div class="item-details">
@@ -221,7 +221,7 @@
 										</div>
 									</div>
 								</li>
-								<li class="example-item">
+								<li class="example-item" tabindex="0">
 									<img class="browser" src="img/img-aplus.jpg" alt="A+" width="360" height="576">
 									<div class="item-container">
 										<div class="item-details">
@@ -233,7 +233,7 @@
 										</div>
 									</div>
 								</li>
-								<li class="example-item">
+								<li class="example-item" tabindex="0">
 									<img class="browser" src="img/img-kvast.jpg" alt="Кваст" width="360" height="576">
 									<div class="item-container">
 										<div class="item-details">
@@ -297,29 +297,29 @@
 					</div>
 				</div>
 				<section class="modal modal-write-us">
-						<h2 class="visually-hidden">Форма обратной связи</h2>
-						<div class="modal-container">
-							<b class="modal-title">Напишите нам</b>
-							<form class="feedback" action="https://echo.htmlacademy.ru" method="post" name="write-us">
-								<div class="data-container">
-									<p class="modal-item">
-										<label class="field-name" for="name">Ваше имя:</label>
-										<input id="name" type="text" name="client_name" value="" placeholder="Имя Фамилия" pattern="[А-Яа-яЁё]{1,30}" maxlength="30" required>
-									</p>
-									<p class="modal-item">
-										<label class="field-name" for="email">Ваш e-mail:</label>
-										<input id="email" type="email" name="email" value="" placeholder="email@example.com" required>
-									</p>
-								</div>
+					<h2 class="visually-hidden">Форма обратной связи</h2>
+					<div class="modal-container">
+						<b class="modal-title">Напишите нам</b>
+						<form class="feedback" action="https://echo.htmlacademy.ru" method="post" name="write-us">
+							<div class="data-container">
 								<p class="modal-item">
-									<label class="field-name" for="text-letter">Текст письма:</label>
-									<textarea id="text-letter" name="text-letter" placeholder="В свободной форме" rows="5" required></textarea>
+									<label class="field-name" for="name">Ваше имя:</label>
+									<input id="name" type="text" name="cln_name" value="" placeholder="Имя Фамилия" pattern="[А-Яа-яЁё]{1,30}" maxlength="30" title="Только кириллические символы.">
 								</p>
-								<button class="btn submit-btn red-btn" type="submit">Отправить</button>
-							</form>
-							<button class="close-modal" type="button" aria-label="Закрыть"></button>
-						</div>
-					</section>
+								<p class="modal-item">
+									<label class="field-name" for="email">Ваш e-mail:</label>
+									<input id="email" type="email" name="email" value="" placeholder="email@example.com">
+								</p>
+							</div>
+							<p class="modal-item">
+								<label class="field-name" for="text-letter">Текст письма:</label>
+								<textarea id="text-letter" name="text-letter" placeholder="В свободной форме" rows="5"></textarea>
+							</p>
+							<button class="btn submit-btn red-btn" type="submit">Отправить</button>
+						</form>
+						<button class="close-modal" type="button" aria-label="Закрыть"></button>
+					</div>
+				</section>
 			</section>
 		</main>
 		<footer class="main-footer">
@@ -351,20 +351,6 @@
 				</div>
 			</div>
 		</footer>
-		<script>
-			var sendbtn = document.querySelector (".send-us-btn");
-			var popup = document.querySelector(".modal-write-us");
-			var close = document.querySelector(".close-modal");
-
-			sendbtn.addEventListener("click", function (evt) {
-				evt.preventDefault();
-				popup.classList.add("modal-show");
-			});
-
-			close.addEventListener("click", function (evt) {
-				evt.preventDefault();
-				popup.classList.remove("modal-show");
-			});
-		</script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
