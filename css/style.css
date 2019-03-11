@@ -8,40 +8,6 @@ body {
 	min-width: 1440px;
 }
 
-/* временные стили */
-
- /* body > * {
-	background-color: rgb(255, 0, 0);
-}
-
-body > * > * {
-	background-color: rgb(255, 94, 0);
-}
-
-body > * > * > * {
-	background-color: rgb(255, 226, 64);
-} */
-/*
-body > * > * > * > * {
-	background-color: rgb(94, 255, 0);
-}
-
-body > * > * > * > * > * {
-	background-color: rgb(0, 255, 234);
-}
-
-body > * > * > * > * > * > * {
-	background-color: rgb(0, 89, 255);
-}
-
-body > * > * > * > * > * > * > * {
-	background-color: rgb(32, 0, 211);
-} */
-
-.brd {
-	border: 1px solid black;
-}
-
 /* основные стили */
 
 a {
@@ -53,26 +19,16 @@ img {
 	height: auto;
 }
 
-/* .visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	clip: rect(0, 0, 0, 0);
-} */
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
 	position: absolute;
-
 	width: 1px;
 	height: 1px;
 	margin: -1px;
 	border: 0;
 	padding: 0;
-
 	white-space: nowrap;
-
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
@@ -647,7 +603,6 @@ background-color: #efc84a;
 	background-color: #ffffff;
 }
 
-/* не доделал */
 .statistics {
 	display: table;
 	width: 360px;
