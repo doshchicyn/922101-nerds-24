@@ -1,15 +1,15 @@
-var sendbtn = document.querySelector (".send-us-btn");
+var sendBtn = document.querySelector (".send-us-btn");
 var popup = document.querySelector(".modal-write-us");
 var close = document.querySelector(".close-modal");
 var form = popup.querySelector("form");
-var cln_name = popup.querySelector("[name=cln_name]");
+var clnName = popup.querySelector("[name=cln_name]");
 var email = popup.querySelector("[name=email]");
-var text_letter = popup.querySelector("[name=text-letter]");
+var textLetter = popup.querySelector("[name=text-letter]");
 
-sendbtn.addEventListener("click", function (evt) {
+sendBtn.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
-    cln_name.focus();
+    clnName.focus();
 });
 
 close.addEventListener("click", function (evt) {
@@ -19,7 +19,7 @@ close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-    if (!cln_name.value || !email.value || !text_letter.value) {
+    if (!clnName.value || !email.value || !textLetter.value) {
         evt.preventDefault();
         popup.classList.remove("modal-error");
         popup.offsetWidth = popup.offsetWidth;

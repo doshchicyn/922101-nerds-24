@@ -173,7 +173,7 @@
 						<section class="example-list">
 							<h2 class="visually-hidden">Карточки готовых сайтов</h2>
 							<ul class="examples">
-								<li class="example-item" tabindex="0">
+								<li class="example-item">
 									<img class="browser" src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
 									<div class="item-container">
 										<div class="item-details">
@@ -185,7 +185,7 @@
 										</div>
 									</div>
 								</li>
-								<li class="example-item" tabindex="0">
+								<li class="example-item">
 									<img class="browser" src="img/img-pink.jpg" alt="Pink" width="360" height="576">
 									<div class="item-container">
 										<div class="item-details">
@@ -197,7 +197,7 @@
 										</div>
 									</div>
 								</li>
-								<li class="example-item" tabindex="0">
+								<li class="example-item">
 									<img class="browser" src="img/img-barbershop.jpg" alt="Барбершоп Бородинский" width="360" height="576">
 									<div class="item-container">
 										<div class="item-details">
@@ -209,7 +209,7 @@
 										</div>
 									</div>
 								</li>
-								<li class="example-item" tabindex="0">
+								<li class="example-item">
 									<img class="browser" src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
 									<div class="item-container">
 										<div class="item-details">
@@ -221,7 +221,7 @@
 										</div>
 									</div>
 								</li>
-								<li class="example-item" tabindex="0">
+								<li class="example-item">
 									<img class="browser" src="img/img-aplus.jpg" alt="A+" width="360" height="576">
 									<div class="item-container">
 										<div class="item-details">
@@ -233,7 +233,7 @@
 										</div>
 									</div>
 								</li>
-								<li class="example-item" tabindex="0">
+								<li class="example-item">
 									<img class="browser" src="img/img-kvast.jpg" alt="Кваст" width="360" height="576">
 									<div class="item-container">
 										<div class="item-details">
@@ -276,8 +276,9 @@
 			</div>
 			<section class="contacts">
 				<h2 class="visually-hidden">Как нас найти</h2>
-				<img class="map-in-contacts" src="img/map.jpg" alt="Адрес офиса Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="100%" height="416">
-				<div class="container">
+				<img class="map-in-contacts" src="img/map.jpg" alt="Адрес офиса Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="100%" height="420">
+				<iframe class="map-in-contacts" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6068643603785!2d30.322285651315788!3d59.938665425484224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552309433372" width="100%" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div class="contact-form">
 					<div class="contact-container">
 						<address class="contact-desc-container">
 							<p class="contact-name">
@@ -304,7 +305,7 @@
 							<div class="data-container">
 								<p class="modal-item">
 									<label class="field-name" for="name">Ваше имя:</label>
-									<input id="name" type="text" name="cln_name" value="" placeholder="Имя Фамилия" pattern="[А-Яа-яЁё]{1,30}" maxlength="30" title="Только кириллические символы.">
+									<input id="name" type="text" name="cln_name" value="" placeholder="Имя Фамилия" pattern="[А-Яа-яЁё\s]{1,30}" maxlength="30" title="Только кириллические символы.">
 								</p>
 								<p class="modal-item">
 									<label class="field-name" for="email">Ваш e-mail:</label>
