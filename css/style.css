@@ -1,11 +1,10 @@
 body {
+	min-width: 1200px;
 	margin: 0;
 	padding: 0;
-
 	color: #000000;
-	background: #ffffff;
+	background-color: #ffffff;
 	font-family: "Roboto", Arial, sans-serif;
-	min-width: 1440px;
 }
 
 /* основные стили */
@@ -719,15 +718,12 @@ background-color: #efc84a;
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	width: 1200px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-ms-flex-line-pack: center;
-	    align-content: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 }
@@ -736,27 +732,33 @@ background-color: #efc84a;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	position: relative;
-	width: 255px;
-	min-height: 180px;
-	margin-right: 45px;
-
+	width: 260px;
+	margin-right: 30px;
+	height: 180px;
+	padding-top: 6px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
-.link-partner:nth-child(4) {
-	padding-right: 0;
+.link-partner:nth-child(4n) {
+	margin-right: 0;
 }
 
 .link-partner::after {
 	content: "";
 	position: absolute;
-	top: 65;
+	top: 65px;
 	left: 278px;
 	height: 52px;
 	width: 2px;
@@ -774,14 +776,13 @@ background-color: #efc84a;
 	transition: 0.2s;
 }
 
-.link-partner a > img {
-	display: block;
+.link-partner > a > img {
 	margin: 0;
 	padding: 0;
 }
 
-.link-item-fix {
-	padding-top: 10px;
+.link-partner > .link-item-fix {
+	padding-top: 9px;
 }
 
 .link-partner a:hover,
@@ -820,17 +821,16 @@ background-color: #efc84a;
 	z-index: 4;
 }
 
-.contact-container {
-	float: left;
+.contact-desc-container {
+	display: block;
+	position: absolute;
+	padding-top: 49px;
+	padding-left: 50px;
 	width: 319px;
 	height: 308px;
 	background-color: #ffffff;
-}
-
-.contact-desc-container {
-	display: block;
-	padding-top: 49px;
-	padding-left: 50px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .contact-desc-container {
@@ -1161,18 +1161,18 @@ background-color: #efc84a;
 	transition: 0.1s;
 }
 
-.link-item:hover,
-.social-btn:focus {
+.social-links .link-item:hover,
+.social-links .social-btn:focus {
 	background-color: #e74246;
 }
 
-.link-item:active {
+.social-links .link-item:active {
 	background-color: #d7373b;
 	-webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 	        box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-.social-btn:active {
+.social-links .social-btn:active {
 	opacity: 0.3;
 }
 
@@ -1562,7 +1562,8 @@ background-color: #efc84a;
 }
 
 .example-item:hover,
-.example-item:focus-within {
+.example-item:focus-within,
+.example-item:focus {
 	-webkit-box-shadow: 0 6px 16px rgba(0, 1, 1, 0.25);
 	        box-shadow: 0 6px 16px rgba(0, 1, 1, 0.25);
 	border-top: 40px solid rgba(77, 77, 77, 1);
@@ -1602,7 +1603,8 @@ background-color: #efc84a;
 	z-index: 51;
 }
 
-.example-item > .item-container:focus-within {
+.example-item > .item-container:focus-within,
+.example-item > .item-container:focus {
 	z-index: 51;
 }
 
@@ -1716,9 +1718,9 @@ background-color: #efc84a;
 }
 
 .modal-write-us {
-	position: absolute;
+	position: fixed;
 	display: none;
-	top: -137px;
+	top: 160px;
 	left: 50%;
 	margin-left: -480px;
 	z-index: 1000;
@@ -1734,7 +1736,7 @@ background-color: #efc84a;
 
 .modal-error {
 	-webkit-animation: shake 0.4s;
-	        animation: shake 0.4s;
+			animation: shake 0.4s;
 }
 
 .modal-container {
@@ -1827,7 +1829,6 @@ background-color: #efc84a;
 	margin-bottom: 17px;
 }
 
-
 .modal-item > label {
 	padding: 0;
 	margin: 0;
@@ -1851,6 +1852,21 @@ background-color: #efc84a;
 
 .modal-item > textarea {
 	padding-top: 11px;
+}
+
+.modal-item > input::-webkit-input-placeholder,
+.modal-item > textarea::-webkit-input-placeholder {
+	color: rgba(68, 68, 68, 0.5);
+}
+
+.modal-item > input::-moz-input-placeholder,
+.modal-item > textarea::-moz-input-placeholder {
+	color: rgba(68, 68, 68, 0.5);
+}
+
+.modal-item > input::-ms-input-placeholder,
+.modal-item > textarea::-ms-input-placeholder {
+	color: rgba(68, 68, 68, 0.5);
 }
 
 .modal-item > input:hover,
