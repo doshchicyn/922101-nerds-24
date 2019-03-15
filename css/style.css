@@ -7,8 +7,6 @@ body {
 	font-family: "Roboto", Arial, sans-serif;
 }
 
-/* основные стили */
-
 a {
 	text-decoration: none;
 }
@@ -193,6 +191,8 @@ input[type="radio"].visually-hidden {
 	color: rgba(0,0,0,0.3);
 }
 
+/* slider on index page */
+
 .slider-list {
 	padding: 0;
 	margin: 0;
@@ -222,21 +222,21 @@ input[type="radio"].visually-hidden {
 	background-position: 100% 100%;
 }
 
-#product-1:checked ~ .slider-list .slide-item:nth-child(1) {
+.product-1:checked ~ .slider-list .slide-item:nth-child(1) {
 	display: block;
 }
 
-#product-2:checked ~ .slider-list .slide-item:nth-child(2) {
+.product-2:checked ~ .slider-list .slide-item:nth-child(2) {
 	display: block;
 }
 
-#product-3:checked ~ .slider-list .slide-item:nth-child(3) {
+.product-3:checked ~ .slider-list .slide-item:nth-child(3) {
 	display: block;
 }
 
-#product-1:checked ~ .slide-controls .slide-controls-item--1::before,
-#product-2:checked ~ .slide-controls .slide-controls-item--2::before,
-#product-3:checked ~ .slide-controls .slide-controls-item--3::before {
+.product-1:checked ~ .slide-controls .slide-controls-item-1::before,
+.product-2:checked ~ .slide-controls .slide-controls-item-2::before,
+.product-3:checked ~ .slide-controls .slide-controls-item-3::before {
 	content: "";
 	position: absolute;
 	left: 50%;
@@ -264,8 +264,6 @@ input[type="radio"].visually-hidden {
 	        transform: translateX(-50%);
 }
 
-/* slider */
-
 .slide-controls label {
 	position: relative;
 	display: inline-block;
@@ -288,43 +286,7 @@ input[type="radio"].visually-hidden {
 	border-radius: 50%;
 }
 
-/* slider - end */
-
-.main-banners .toggle {
-	display: inline-block;
-	position: relative;
-	width: 18px;
-	height: 18px;
-	border-radius: 50%;
-	cursor: pointer;
-	padding: 8px;
-}
-
-.main-banners .toggle::after {
-	content: "";
-	width: 18px;
-	height: 18px;
-	background-color: #ffffff;
-	position: absolute;
-	top: 8px;
-	left: 8px;
-	z-index: 1;
-	border-radius: 50%;
-}
-
-.main-banners .toggle.active::before {
-	content: "";
-	position: absolute;
-
-	left: 50%;
-	top: 50%;
-	z-index: 2;
-	width: 4px;
-	height: 4px;
-	margin: -4px;
-	border: 2px solid #d0d0d0;
-	border-radius: 50%;
-}
+/* end slider on index page */
 
 .slide-title {
 	padding: 0;
@@ -423,7 +385,7 @@ input[type="radio"].visually-hidden {
 .list-item .item-image {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 21px;
+	margin-bottom: 22px;
 	width: 300px;
 	height: 146px;
 }
@@ -431,7 +393,7 @@ input[type="radio"].visually-hidden {
 .list-item .item-title {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 16px;
+	margin-bottom: 15px;
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: bold;
@@ -443,7 +405,7 @@ input[type="radio"].visually-hidden {
 .list-item .item-text {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 32px;
+	margin-bottom: 33px;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
@@ -541,7 +503,7 @@ background-color: #efc84a;
 .main-desc {
 	padding: 0;
 	margin: 0;
-	padding-bottom: 59px;
+	padding-bottom: 61px;
 }
 
 .desc-container {
@@ -576,7 +538,7 @@ background-color: #efc84a;
 	display: inline-block;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 33px;
+	margin-bottom: 32px;
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
@@ -586,7 +548,7 @@ background-color: #efc84a;
 .column-our-work .work-desc {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 39px;
+	margin-bottom: 40px;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: normal;
@@ -596,7 +558,7 @@ background-color: #efc84a;
 .order-list-header {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 24px;
+	margin-bottom: 23px;
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
@@ -640,7 +602,7 @@ background-color: #efc84a;
 	content: "";
 	position: absolute;
 	left: -35px;
-	top: 11px;
+	top: 12px;
 	border: 1px solid #fb565a;
 	width: 23px;
 }
@@ -662,7 +624,7 @@ background-color: #efc84a;
 	padding: 0;
 	padding-top: 20px;
 	padding-right: 20px;
-	padding-bottom: 17px;
+	padding-bottom: 16px;
 	text-align: left;
 	vertical-align: center;
 }
@@ -670,7 +632,7 @@ background-color: #efc84a;
 .statistics .theme {
 	margin: 0;
 	padding: 0;
-	padding-top: 32px;
+	padding-top: 33px;
 	padding-bottom: 38px;
 	font-size: 16px;
 	line-height: 24px;
@@ -738,7 +700,7 @@ background-color: #efc84a;
 	width: 260px;
 	margin-right: 30px;
 	height: 180px;
-	padding-top: 6px;
+	padding-top: 5px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 }
@@ -844,7 +806,7 @@ background-color: #efc84a;
 }
 
 .contact-name {
-	margin-bottom: 23px;
+	margin-bottom: 22px;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
@@ -1648,7 +1610,7 @@ background-color: #efc84a;
 	        box-shadow: inset 0px 3px 0 0 rgba(193, 49, 53, 0.6);
 }
 
-/* модальное окно */
+/* modal popup */
 
 @-webkit-keyframes shake {
 	0%,
