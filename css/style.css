@@ -40,8 +40,8 @@ input[type="radio"].visually-hidden {
 }
 
 .header-container-inner {
-	min-height: 305px;
-	padding-top: 50px; 
+	min-height: 306px;
+	padding-top: 49px; 
 	background-color: #eeeeee;
 	margin-bottom: 52px;
 }
@@ -166,10 +166,10 @@ input[type="radio"].visually-hidden {
 	content: "";
 	position: absolute;
 	top: 2px;
-	left: -41px;
+	left: -40px;
 	width: 15px;
 	height: 15px;
-	background-image: url("../img/cart-icon.png");
+	background-image: url("../img/cart-icon.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -303,6 +303,12 @@ input[type="radio"].visually-hidden {
 	height: 18px;
 	background: #ffffff;
 	border-radius: 50%;
+}
+
+.main-banners > input.product-1:focus ~ .slide-controls label[for="product-1"]::after,
+.main-banners > input.product-2:focus ~ .slide-controls label[for="product-2"]::after,
+.main-banners > input.product-3:focus ~ .slide-controls label[for="product-3"]::after {
+	outline: 2px auto #4d90fe;
 }
 
 /* end slider on index page */
